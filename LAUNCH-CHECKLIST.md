@@ -42,3 +42,14 @@ The draft policy and `about.html` already say the website is hosted through Clou
 - [ ] Decide whether users outside Australia are actively targeted (EU, UK or other obligations)
 - [ ] Confirm there are no other service providers, analytics or tracking tools
 - [ ] Remove the `noindex` tag and the draft notice from `privacy.html` when final
+
+## Membership and pricing (not live)
+The pricing section on the homepage shows indicative prices and disabled buttons.
+See `docs/membership-architecture.md` for the proposed payment set-up.
+- [ ] Confirm final prices and currency (indicative: A$19.95 monthly, A$203.49 for 12 months)
+- [ ] Decide whether the 12-month plan renews automatically, and state it on the annual card
+- [ ] Refund policy and published membership terms (the monthly card refers to "the published terms", which do not exist yet)
+- [ ] Legal review of selling a 12-month plan while only 24 weeks of program are released
+- [ ] Add the payment provider to the Privacy Policy (sections 6 and 10) once chosen
+- [ ] Update `about.html` "Tester limitations", which still describes a free tester
+- [ ] Build and test checkout, cancellation, notifications and access control before enabling the buttons

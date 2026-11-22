@@ -326,3 +326,27 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .stages .later .m{color:var(--dim)}
 @media (max-width:760px){.stages{grid-template-columns:1fr}}
 .roadclose{font:800 clamp(26px,3.6vw,40px)/1.05 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:34px 0 0;max-width:20em;text-wrap:balance}
+
+/* membership and pricing */
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0 18px;align-items:stretch}
+@media (max-width:760px){.plans{grid-template-columns:1fr}}
+.plan{background:var(--card);border-radius:24px;padding:28px;display:flex;flex-direction:column;border:2px solid transparent;position:relative}
+.plan.best{border-color:var(--acc)}
+.plan .rec{align-self:flex-start;font:600 14px/1 Barlow,sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:#17181B;background:var(--acc);border-radius:12px;padding:7px 11px;margin-bottom:14px}
+.plan h3{font-size:30px}
+.plan .pitch{color:var(--air);font:800 22px/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin:8px 0 14px}
+.plan .price{display:flex;align-items:baseline;gap:10px;margin:0}
+.plan .price b{font:800 clamp(48px,7vw,68px)/1 'Barlow Condensed',sans-serif}
+.plan .price span{color:var(--mut)}
+.plan .ptag{color:var(--mut);font-size:15px;margin:8px 0 0}
+.plan .hl{font:800 20px/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--acct);margin:14px 0 0;letter-spacing:.4px}
+.plan .plain{flex:1;margin:14px 0 20px}
+.plan .btn{width:100%;border:0;cursor:pointer}
+.plan .btn:disabled{background:var(--edge);color:var(--mut);cursor:not-allowed;transform:none}
+.plan .small{color:var(--dim);font-size:15px;text-align:center;margin:8px 0 0}
+.member .pending{border:1px solid var(--amb);border-radius:14px;padding:14px 16px;color:var(--ink);max-width:900px}
+.member .pending b{color:var(--amb)}
+.trial{margin-top:30px;gap:36px}
+.trial h3{font-size:24px;margin-bottom:10px}
+.steps{margin:0;padding-left:22px;color:var(--mut)}
+.steps li{padding:5px 0}
