@@ -3,266 +3,322 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Breathe Strong: muscle holds your airway open. Train it.</title>
-<meta name="description" content="Breathe Strong is a 6-month app and training program for men over 40 who snore or use CPAP. Six months of training, then a repeat sleep study. Your doctor decides.">
+<title>Breathe Strong | 24-week training program for men who snore or have obstructive sleep apnoea</title>
+<meta name="description" content="Less snoring. Better sleep. Stronger breathing. A structured 24-week exercise and lifestyle program for men over 40 who snore, live with obstructive sleep apnoea or use CPAP. Results vary; treatment changes are for your clinician.">
 <meta name="theme-color" content="#17181B">
-<meta property="og:title" content="Breathe Strong">
-<meta property="og:description" content="Muscle holds your airway open. Train it. 6 months of training, then a repeat sleep study. Your doctor decides.">
+<link rel="canonical" href="https://swornsealed.github.io/breathe-strong-site/">
+<meta property="og:site_name" content="Breathe Strong">
+<meta property="og:title" content="Breathe Strong: less snoring, better sleep, stronger breathing">
+<meta property="og:description" content="A structured 24-week training program for men who snore or live with obstructive sleep apnoea.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://swornsealed.github.io/breathe-strong-site/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
-<style>
-:root{color-scheme:dark;--bg:#17181B;--card:#24272C;--deep:#0F1012;--ink:#F2F0EC;--mut:#B9B6B0;--dim:#9A9791;--acc:#FF5A1F;--acct:#FF7A45;--amb:#E8B04B;--air:#7FB7A4;--line:#3A3D43;--edge:#4A4E55;--b:0}
-*{box-sizing:border-box;min-width:0}
-html{background:var(--bg)}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 Barlow,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--acct)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:8px}
-h1,h2,h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:.95;margin:0;text-wrap:balance}
-p{margin:0 0 14px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-.eyebrow{font:600 14px/1.3 Barlow,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--air);margin:0 0 16px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:0 32px;border-radius:30px;background:var(--acc);color:#17181B;font:800 24px 'Barlow Condensed',sans-serif;text-transform:uppercase;text-decoration:none;letter-spacing:.3px;transition:transform .15s,background .15s}
-.btn:hover{background:var(--acct);transform:translateY(-2px)}
-.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:60px;padding:0 26px;border-radius:30px;border:1px solid var(--edge);color:var(--ink);font-weight:600;text-decoration:none}
-.btn2:hover{border-color:var(--ink)}
-.btn.sm{min-height:44px;font-size:18px;padding:0 18px}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-.rv.in{opacity:1;transform:none}
-.nojs .rv{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.btn{transition:none}}
-
-/* header */
-header{position:fixed;inset:0 0 auto 0;z-index:20;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
-header.solid{background:rgba(23,24,27,.92);backdrop-filter:blur(8px);border-color:var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:64px}
-.logo{font:800 24px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--ink);text-decoration:none;letter-spacing:.5px;white-space:nowrap}
-.logo b{color:var(--acc)}
-header nav{display:flex;align-items:center;gap:22px}
-header nav a.txt{color:var(--mut);text-decoration:none;font-weight:500;font-size:16px}
-header nav a.txt:hover{color:var(--ink)}
-@media (max-width:560px){header nav a.txt{display:none}}
-
-/* hero */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:96px 0 72px;overflow:hidden}
-#wave{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
-.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:160px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
-.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center;width:100%}
-.hero h1{font-size:clamp(46px,6.7vw,90px);letter-spacing:-1px}
-@media (max-width:860px){.hero h1{font-size:clamp(46px,12.5vw,84px)}}
-.hero h1 span{display:block}
-.hero h1 em{font-style:normal;color:var(--acc)}
-.lead{font-size:clamp(19px,2.1vw,23px);color:var(--mut);max-width:30em;margin:24px 0 30px}
-.cta{display:flex;flex-wrap:wrap;gap:12px}
-.ringbox{position:relative;justify-self:center;width:min(420px,82vw);aspect-ratio:1;display:grid;place-items:center}
-.ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--air);transform:scale(calc(.8 + .2*var(--b)));box-shadow:0 0 calc(30px + 70px*var(--b)) rgba(127,183,164,calc(.12 + .28*var(--b))),inset 0 0 calc(20px + 60px*var(--b)) rgba(127,183,164,calc(.05 + .14*var(--b)))}
-.ring.r2{inset:9%;border-color:rgba(127,183,164,.35);box-shadow:none;transform:scale(calc(.78 + .24*var(--b)))}
-.ring.r3{inset:-9%;border:1px dashed rgba(127,183,164,.25);box-shadow:none;transform:scale(calc(.86 + .14*var(--b)))}
-.ringbox img{position:relative;width:54%;}
-.breath{position:absolute;left:0;right:0;bottom:-46px;text-align:center;font:800 22px 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:3px;color:var(--air)}
-.breath small{display:block;font:500 14px Barlow,sans-serif;letter-spacing:.3px;text-transform:none;color:var(--dim)}
-.scrollcue{position:absolute;left:50%;bottom:18px;z-index:2;width:2px;height:44px;background:linear-gradient(var(--air),transparent);animation:cue 2s ease-in-out infinite}
-@keyframes cue{0%,100%{transform:translateY(0);opacity:.9}50%{transform:translateY(10px);opacity:.3}}
-@media (prefers-reduced-motion:reduce){.scrollcue{animation:none}}
-@media (max-width:860px){.hero{padding-top:88px}.hero .wrap{grid-template-columns:1fr;gap:36px}.ringbox{width:min(300px,70vw);margin-bottom:56px}.scrollcue{display:none}}
-
-/* strip */
-.strip{border-block:1px solid var(--line);background:var(--deep)}
-.strip .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
-.strip div{padding:26px 12px;text-align:center}
-.strip div+div{border-left:1px solid var(--line)}
-.strip b{display:block;font:800 clamp(40px,6vw,64px)/1 'Barlow Condensed',sans-serif;color:var(--ink)}
-.strip span{color:var(--mut);font-size:15px}
-@media (max-width:640px){.strip .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}.strip div:nth-child(3){border-left:0}.strip div:nth-child(n+3){border-top:1px solid var(--line)}}
-
-/* why */
-.why{padding:120px 0}
-.why h2{font-size:clamp(40px,7.4vw,92px);max-width:11em}
-.why h2 .dim{color:var(--edge)}
-.why .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:56px}
-.why .three div{border-top:3px solid var(--air);padding-top:18px}
-.why .three h3{font-size:30px;margin-bottom:8px}
-.why .three p{color:var(--mut);margin:0}
-.why .three .fix{display:block;margin-top:10px;color:var(--air);font-weight:600;font-size:16px}
-@media (max-width:760px){.why{padding:80px 0}.why .three{grid-template-columns:1fr;gap:28px}}
-
-/* rail */
-.jobs{padding:40px 0 110px}
-.jobs .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:28px}
-.jobs h2{font-size:clamp(40px,6.4vw,76px)}
-.arrows{display:flex;gap:10px}
-.arrows button{width:52px;height:52px;border-radius:50%;border:1px solid var(--edge);background:transparent;color:var(--ink);font-size:22px;cursor:pointer}
-.arrows button:hover{border-color:var(--ink)}
-.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px max(20px,calc((100vw - 1120px)/2)) 22px;scrollbar-width:thin;scrollbar-color:var(--edge) transparent}
-.job{flex:0 0 min(340px,82vw);scroll-snap-align:center;background:var(--card);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;position:relative}
-.job .pic{height:250px;background:var(--bg);display:grid;place-items:center;padding:18px;position:relative}
-.job .pic img{max-height:214px;width:auto}
-.job .pic svg{width:150px;height:150px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.job .n{position:absolute;top:14px;left:18px;font:800 54px/1 'Barlow Condensed',sans-serif;color:transparent;-webkit-text-stroke:1.5px var(--acc)}
-.job .txt{padding:22px 24px 26px}
-.job h3{font-size:30px;margin-bottom:10px}
-.job p{color:var(--mut);margin:0 0 12px;font-size:17px}
-.job .when{color:var(--air);font-weight:600;font-size:15px;margin:0}
-@media (max-width:560px){.arrows{display:none}}
-
-/* weeks */
-.weeks{height:320vh;position:relative;background:var(--deep)}
-.weeks .pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;overflow:hidden}
-.weeks .wrap{width:100%}
-.wk{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
-.wk .lab{font:800 clamp(30px,5vw,56px)/1 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--dim)}
-.wk .num{font:800 clamp(150px,34vw,400px)/.8 'Barlow Condensed',sans-serif;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:-6px}
-.wk .of{font:800 clamp(30px,5vw,56px)/1 'Barlow Condensed',sans-serif;color:var(--edge)}
-.phase{margin-top:26px;min-height:6.4em;max-width:36em}
-.phase h3{font-size:clamp(34px,5vw,54px);color:var(--air);margin-bottom:10px}
-.phase.end h3{color:var(--acc)}
-.phase p{color:var(--mut);font-size:clamp(18px,2vw,21px);margin:0}
-.track{position:relative;height:10px;border-radius:5px;background:var(--line);margin-top:30px;overflow:hidden}
-.track i{position:absolute;inset:0;background:var(--air);transform-origin:left;transform:scaleX(0)}
-.ticks{display:grid;grid-template-columns:2fr 3fr 3fr 16fr;font-size:13px;color:var(--dim);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
-.ticks span{white-space:nowrap;overflow:hidden;text-overflow:clip}
-@media (max-width:640px){.ticks{display:none}.wk .num{letter-spacing:-3px}}
-
-/* deal */
-.deal{background:var(--acc);color:#17181B;padding:110px 0}
-.deal h2{font-size:clamp(46px,8.6vw,112px)}
-.deal h2 span{display:block}
-.deal .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;margin-top:44px;max-width:960px}
-.deal h3{font-size:26px;margin-bottom:8px}
-.deal p{font-weight:500;margin:0}
-@media (max-width:760px){.deal{padding:76px 0}.deal .cols{grid-template-columns:1fr;gap:26px}}
-
-/* caution */
-.caution{padding:80px 0 0}
-.caution .box{border:2px solid var(--amb);border-radius:24px;padding:26px 28px;max-width:900px}
-.caution .eyebrow{color:var(--amb)}
-.caution p{margin:0}
-
-/* final */
-.final{padding:120px 0 110px;text-align:center;position:relative;overflow:hidden}
-.final h2{font-size:clamp(52px,10vw,130px)}
-.final h2 em{font-style:normal;color:var(--acc)}
-.final p{color:var(--mut);font-size:21px;margin:20px auto 30px;max-width:26em}
-.final .cta{justify-content:center}
-.soon{margin-top:28px;color:var(--dim);font-size:16px}
-footer{border-top:1px solid var(--line);padding:30px 0 46px;color:var(--dim);font-size:15px}
-footer p{max-width:62em}
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body class="nojs">
+<a class="skip" href="#main">Skip to content</a>
 
 <header id="hdr">
   <div class="wrap">
-    <a class="logo" href="./">Breathe <b>Strong</b></a>
-    <nav aria-label="Main">
-      <a class="txt" href="program.html">The full program</a>
-      <a class="btn sm" href="https://swornsealed.github.io/breathe-strong/">Open the app</a>
+    <a class="logo" href="./" aria-label="Breathe Strong home">Breathe <b>Strong</b></a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="./">Home</a>
+      <a href="#how">How it works</a>
+      <a href="#journey">The 24-week program</a>
+      <a href="#evidence">Evidence and safety</a>
+      <a href="#faq">FAQ</a>
     </nav>
+    <div class="right">
+      <a class="btn sm" href="https://swornsealed.github.io/breathe-strong/">Launch tester</a>
+      <details class="menu" id="menu">
+        <summary aria-label="Menu"><span></span></summary>
+        <nav aria-label="Main, mobile">
+          <a href="./">Home</a>
+          <a href="#how">How it works</a>
+          <a href="#journey">The 24-week program</a>
+          <a href="#evidence">Evidence and safety</a>
+          <a href="#faq">FAQ</a>
+          <a href="https://swornsealed.github.io/breathe-strong/">Launch tester</a>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
+<!-- A: Hero -->
 <section class="hero" id="hero">
   <canvas id="wave" aria-hidden="true"></canvas>
   <div class="wrap">
     <div>
-      <p class="eyebrow">For men over 40 who snore or use CPAP</p>
-      <h1><span>Muscle holds</span><span>your airway open.</span><span><em>Train it.</em></span></h1>
-      <p class="lead">Six months. Six jobs. One app that sets out every day. Lift with a brace, train your tongue and throat, load your breathing, and watch your numbers.</p>
+      <h1><span>Less snoring.</span><span>Better sleep.</span><span>Stronger breathing.</span></h1>
+      <p class="sub">A structured 24-week training program for men who snore or live with obstructive sleep apnoea.</p>
+      <p class="lead">Train the muscles involved in breathing and airway control, improve your fitness and track your progress with a practical program designed to support better sleep health.</p>
       <div class="cta">
-        <a class="btn" href="https://swornsealed.github.io/breathe-strong/">Start week one</a>
-        <a class="btn2" href="program.html">See the full program</a>
+        <a class="btn" href="https://swornsealed.github.io/breathe-strong/">Explore the free tester</a>
+        <a class="btn2" href="#how">See how the program works</a>
       </div>
+      <p class="note">Work towards quieter nights, better sleep and measurable progress that can help inform a discussion with your clinician about your ongoing treatment needs.</p>
     </div>
     <div class="ringbox" aria-hidden="true">
       <span class="ring r3"></span><span class="ring"></span><span class="ring r2"></span>
       <img src="img/carry-t.webp" width="398" height="440" alt="">
-      <div class="breath"><span id="bl">Breathe in</span><small>Through your nose. Follow the ring.</small></div>
+      <div class="breath"><span id="bl">Breathe in</span><small>Follow the ring.</small></div>
     </div>
   </div>
-  <span class="scrollcue" aria-hidden="true"></span>
 </section>
 
 <section class="strip" aria-label="The program in numbers">
   <div class="wrap">
-    <div><b>24</b><span>weeks of training</span></div>
-    <div><b>6</b><span>jobs in one plan</span></div>
-    <div><b>12</b><span>minute daily airway routine</span></div>
-    <div><b>0</b><span>accounts. Logs stay on your phone</span></div>
+    <div><b>24</b><span>weeks, in four phases</span></div>
+    <div><b>6</b><span>parts to the program</span></div>
+    <div><b>20</b><span>minutes a day of breathing and airway work</span></div>
+    <div><b>4</b><span>equipment options, gym to bodyweight</span></div>
   </div>
 </section>
 
-<section class="why">
+<!-- B: Who it is for -->
+<section class="who" id="who">
   <div class="wrap">
-    <p class="eyebrow rv">Why now</p>
-    <h2 class="rv">Past 40, the night gets <span class="dim">louder.</span> You can push back.</h2>
-    <div class="three">
-      <div class="rv"><h3>Tone</h3><p>The muscles of the tongue and throat hold the airway open. They get slack with age.</p><span class="fix">Daily tongue, throat and breathing work</span></div>
-      <div class="rv"><h3>Load</h3><p>Weight round the neck and belly presses on the airway when you lie down.</p><span class="fix">Strength and cardio, built up over months</span></div>
-      <div class="rv"><h3>Fluid</h3><p>Fluid that pools in your legs by day moves towards your neck at night.</p><span class="fix">An evening wind-down that targets it</span></div>
+    <div class="sechead">
+      <p class="eyebrow rv">Who Breathe Strong is for</p>
+      <h2 class="rv">Built for men over 40</h2>
+    </div>
+    <div class="grid3">
+      <div class="card rv"><h3>Men who snore</h3><p>For men who want to take practical steps towards quieter nights and better sleep.</p></div>
+      <div class="card rv"><h3>Men with sleep apnoea</h3><p>For men living with obstructive sleep apnoea who want a structured exercise and lifestyle program to support their sleep health.</p></div>
+      <div class="card rv"><h3>Men using CPAP</h3><p>For men who want to improve their health, monitor progress and explore whether their treatment needs could eventually be reassessed by their clinician.</p><p class="when">You keep using CPAP as prescribed throughout.</p></div>
     </div>
   </div>
 </section>
 
-<section class="jobs" id="jobs">
-  <div class="wrap head">
-    <div><p class="eyebrow rv">The work</p><h2 class="rv">Six jobs</h2></div>
-    <div class="arrows"><button type="button" id="prev" aria-label="Previous job">←</button><button type="button" id="next" aria-label="Next job">→</button></div>
-  </div>
-  <div class="rail" id="rail" tabindex="0" aria-label="The six parts of the program">
-    <article class="job"><div class="pic"><span class="n">01</span><img src="img/hinge-t.webp" width="411" height="440" loading="lazy" alt="Line drawing of a bearded man in his fifties hinging at the hips with dumbbells, back flat."></div><div class="txt"><h3>Lift with a brace</h3><p>Deadlifts, presses, rows, squats and carries. Big belly breath, chin tucked, every rep.</p><p class="when">3 days a week</p></div></article>
-    <article class="job"><div class="pic"><span class="n">02</span><img src="img/tongue-t.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the mouth and throat with the tongue pressed to the roof of the mouth."></div><div class="txt"><h3>Tongue and throat</h3><p>A guided routine of tongue, throat and neck moves, with airway drawings and a timer.</p><p class="when">Every day · 12 min</p></div></article>
-    <article class="job"><div class="pic"><span class="n">03</span><img src="img/breath-t.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the airway with a dotted arrow showing air moving through the nose and down the throat."></div><div class="txt"><h3>Breathing trainer</h3><p>Resistance for the muscles that pull air in and push it out. The level climbs as you do.</p><p class="when">In and out · trainer sold separately</p></div></article>
-    <article class="job"><div class="pic"><span class="n">04</span><img src="img/stride-t.webp" width="423" height="440" loading="lazy" alt="Line drawing of the same man in a long stride."></div><div class="txt"><h3>Cardio</h3><p>Zone 2 at talking pace, nose breathing only. One long walk a week, loaded if you like.</p><p class="when">3 days a week · 30 to 45 min</p></div></article>
-    <article class="job"><div class="pic"><span class="n">05</span><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M62 18a30 30 0 1 0 22 46A26 26 0 0 1 62 18z"/><path d="M10 86h80M24 94h52"/><path d="M22 30v8M18 34h8M40 14v6M37 17h6"/></svg></div><div class="txt"><h3>Evening wind-down</h3><p>A walk after dinner, calf raises and an early last drink, so less fluid heads for your neck.</p><p class="when">Every evening · 15 min</p></div></article>
-    <article class="job"><div class="pic"><span class="n">06</span><svg viewBox="0 0 100 100" aria-hidden="true"><rect x="30" y="26" width="40" height="48" rx="10"/><path d="M38 26l3-14h18l3 14M38 74l3 14h18l3-14"/><path d="M36 52h7l4-9 6 16 4-7h7"/></svg></div><div class="txt"><h3>Track it</h3><p>Snore score, CPAP hours and events, and your watch’s overnight numbers, charted against your baseline.</p><p class="when">1 minute each morning</p></div></article>
+<!-- C: How it works -->
+<section class="band" id="how">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow rv">How Breathe Strong works</p>
+      <h2 class="rv">Six parts. One daily plan.</h2>
+      <p class="rv">The app sets out each day for you. The parts work together as one program; no single part is a fix on its own.</p>
+    </div>
+    <div class="grid3">
+      <article class="card feature rv">
+        <div class="pic"><img src="img/tongue-t.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the mouth and throat with the tongue pressed to the roof of the mouth."></div>
+        <div>
+          <span class="tag">The core of the program</span>
+          <span class="n">01</span>
+          <h3>Tongue and throat training</h3>
+          <p>A guided daily routine of tongue, throat and neck exercises, shown step by step with airway drawings and a timer. This is the most directly targeted part of the program, and the part with the most research behind it for snoring.</p>
+          <p class="when">Every day · about 12 minutes</p>
+        </div>
+      </article>
+      <article class="card rv"><span class="n">02</span><h3>Breathing and respiratory exercises</h3><p>Resistance work with a handheld breathing trainer, breathing in and out, counted breath by breath as the level builds.</p><p class="when">Every day · about 8 minutes · trainer sold separately</p></article>
+      <article class="card rv"><span class="n">03</span><h3>Cardiovascular fitness</h3><p>Steady sessions at a pace where you can still hold a conversation, building from 30 to 45 minutes, plus one longer walk each week.</p><p class="when">3 days a week</p></article>
+      <article class="card rv"><span class="n">04</span><h3>Strength and conditioning</h3><p>Full-body sessions of deadlifts, presses, rows, squats and carries, with coaching on bracing and posture. Versions for the gym, dumbbells, household items or bodyweight.</p><p class="when">3 days a week · about 50 minutes</p></article>
+      <article class="card rv"><span class="n">05</span><h3>Sleep-health habits</h3><p>A short evening wind-down: a walk after dinner, calf raises and an earlier last drink. It includes simple habits aimed at fluid that collects in the legs during the day.</p><p class="when">Every evening · about 15 minutes</p></article>
+      <article class="card wide rv"><span class="n">06</span><h3>Progress monitoring</h3><p>Log your night in about a minute each morning, tick off your sessions and repeat short checks at set points. The app charts your own numbers over time and builds a summary you can take to your clinician.</p><p class="when">About 1 minute each morning</p></article>
+    </div>
   </div>
 </section>
 
-<section class="weeks" id="weeks" aria-label="The 24 weeks">
+<!-- D: Inside the program -->
+<section id="inside" style="padding-bottom:72px">
+  <div class="wrap railhead">
+    <div class="sechead">
+      <p class="eyebrow rv">Inside the program</p>
+      <h2 class="rv">What you get in the tester</h2>
+      <p class="rv">These are real screens from the current tester app, not mock-ups.</p>
+    </div>
+    <div class="arrows"><button type="button" id="prev" aria-label="Previous screen">←</button><button type="button" id="next" aria-label="Next screen">→</button></div>
+  </div>
+  <div class="rail" id="rail" tabindex="0" role="region" aria-label="Screens from the tester app">
+    <figure class="shot"><div class="phone"><img src="img/app-day.webp" width="585" height="1170" loading="lazy" alt="The app's Today screen for a training day, listing the breathing trainer, airway routine, workout and evening wind-down, with a reminder to keep using CPAP every night."></div><figcaption><b>Daily training guidance</b><span>Each day’s sessions, in order, with times.</span></figcaption></figure>
+    <figure class="shot"><div class="phone"><img src="img/app-routine.webp" width="585" height="1170" loading="lazy" alt="The airway routine player showing the tongue press exercise with an airway drawing, numbered steps and a note on where you should feel it."></div><figcaption><b>Exercise demonstrations</b><span>Step-by-step drawings and cues for every move.</span></figcaption></figure>
+    <figure class="shot"><div class="phone"><img src="img/app-plan.webp" width="585" height="1170" loading="lazy" alt="The Plan screen showing the four phases across 24 weeks and a monthly calendar with milestone days marked."></div><figcaption><b>The 24-week structure</b><span>Phases, calendar and checkpoints.</span></figcaption></figure>
+    <figure class="shot"><div class="phone"><img src="img/app-breathing.webp" width="585" height="1170" loading="lazy" alt="The breathing trainer screen with a breath counter, a button to tap for each breath and a trainer level control."></div><figcaption><b>Breathing sessions</b><span>Counted sets with your trainer level.</span></figcaption></figure>
+    <figure class="shot"><div class="phone"><img src="img/app-workout.webp" width="585" height="1170" loading="lazy" alt="A strength workout screen listing exercises with sets, reps, a log for weights and rest timers."></div><figcaption><b>Strength and cardio sessions</b><span>Sets, reps, logging and rest timers.</span></figcaption></figure>
+    <figure class="shot"><div class="phone"><img src="img/app-log.webp" width="585" height="1170" loading="lazy" alt="The Log last night screen with fields for snore score, partner rating and daytime tiredness."></div><figcaption><b>Progress tracking</b><span>A one-minute log each morning.</span></figcaption></figure>
+  </div>
+  <div class="wrap">
+    <div class="moves">
+      <figure><div class="pic"><img src="img/hinge-t.webp" width="411" height="440" loading="lazy" alt="Line drawing of a bearded man in his fifties hinging at the hips with dumbbells, back flat."></div><figcaption>Dumbbell deadlift</figcaption></figure>
+      <figure><div class="pic"><img src="img/breath-t.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the airway with a dotted arrow showing air moving through the nose and down the throat."></div><figcaption>Airway routine</figcaption></figure>
+      <figure><div class="pic" style="background:#111317"><img src="img/row.webp" width="432" height="440" loading="lazy" alt="Line drawing of the same man doing a one-arm dumbbell row with a hand and knee on a bench."></div><figcaption>One-arm row</figcaption></figure>
+      <figure><div class="pic"><img src="img/stride-t.webp" width="423" height="440" loading="lazy" alt="Line drawing of the same man in a split-squat stance."></div><figcaption>Split squat</figcaption></figure>
+      <figure><div class="pic" style="background:#101216"><img src="img/plank.webp" width="440" height="249" loading="lazy" alt="Line drawing of the same man holding a plank on his forearms."></div><figcaption>Plank</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- E: 24-week journey -->
+<section class="weeks" id="journey" aria-labelledby="jh">
   <div class="pin">
     <div class="wrap">
-      <div class="wk"><span class="lab">Week</span><span class="num" id="wn">01</span><span class="of">/ 24</span></div>
-      <div class="phase" id="ph"><h3 id="pt">Foundation</h3><p id="pd">Learn the moves and the brace. 3 sets of 10–12. Log your snore score to set a baseline.</p></div>
-      <div class="track"><i id="fill"></i></div>
-      <div class="ticks" aria-hidden="true"><span>Found.</span><span>Build</span><span>Strength</span><span>Progression</span></div>
+      <p class="eyebrow">Your 24-week journey</p>
+      <h2 id="jh">Four phases, then a review</h2>
+      <p class="intro">The program builds consistency first, then exercise capacity, with regular checkpoints so you keep monitoring. It does not promise a particular result by a particular week.</p>
+      <div aria-hidden="true">
+        <div class="wk"><span class="lab">Week</span><span class="num" id="wn">01</span><span class="of">/ 24</span></div>
+        <div class="phase" id="ph"><h3 id="pt">Foundation</h3><p id="pd">Learn the exercises and settle into the daily routine. Strength work at 3 sets of 10–12, steady cardio for 30 minutes. Log your nights to set a baseline.</p></div>
+        <div class="track"><i id="fill"></i></div>
+        <div class="ticks"><span>Found.</span><span>Build</span><span>Strength</span><span>Progression</span></div>
+      </div>
+      <ol class="vh">
+        <li>Weeks 1 to 2, Foundation: learn the exercises and settle into the daily routine. Strength work at 3 sets of 10 to 12, steady cardio for 30 minutes. Log your nights to set a baseline.</li>
+        <li>Weeks 3 to 5, Build: strength work moves to 4 sets of 6 to 8 and cardio to 40 minutes. First checkpoint at week 4.</li>
+        <li>Weeks 6 to 8, Strength: 4 to 5 sets of 4 to 6 and cardio at 45 minutes. Second checkpoint at week 8.</li>
+        <li>Weeks 9 to 24, Progression: the same sessions with small loads added over time. Compare your logs with your baseline at 3 months.</li>
+        <li>Week 24, Review: compare your records with where you started and take your summary to your clinician. If you use CPAP or an oral appliance, ask about a repeat sleep study.</li>
+      </ol>
     </div>
   </div>
 </section>
 
+<!-- F: Measure your progress -->
+<section class="measure" id="measure">
+  <div class="wrap">
+    <div class="phone rv"><img src="img/app-log.webp" width="585" height="1170" loading="lazy" alt="The Log last night screen, where you type in your snore score, a partner rating and how tired you feel."></div>
+    <div>
+      <p class="eyebrow rv">Measure your progress</p>
+      <h2 class="rv">Your own numbers, over time</h2>
+      <ul class="plain rv">
+        <li><b>Snoring.</b> A nightly snore score you copy in from a separate snore-recording app on your phone, plus an optional rating from your partner.</li>
+        <li><b>Daytime energy.</b> A daily tiredness rating and a short energy check you repeat at checkpoints.</li>
+        <li><b>Training.</b> Sessions ticked off as you go, with weights and reps logged for strength work.</li>
+        <li><b>CPAP.</b> Hours used, events per hour and mask seal, typed in from what your machine reports.</li>
+        <li><b>Watch or ring.</b> Resting heart rate, breathing rate and blood oxygen, typed in from your wearable’s own app.</li>
+        <li><b>Sleep studies.</b> Results from your clinician, entered by you, kept alongside your logs.</li>
+        <li><b>Clinician summary.</b> A plain-text summary of your records to bring to an appointment.</li>
+      </ul>
+      <p class="fine rv">In the tester, every number is entered by hand. The app does not record or measure snoring, oxygen or breathing events itself, and there is no automatic sync with CPAP machines or watches yet. These records show trends. They cannot show whether obstructive sleep apnoea has resolved; only a sleep study reviewed by your clinician can.</p>
+    </div>
+  </div>
+</section>
+
+<!-- The commitment -->
 <section class="deal">
   <div class="wrap">
-    <h2><span class="rv">6 months of training.</span><span class="rv">Then a repeat sleep study.</span><span class="rv">Your doctor decides.</span></h2>
-    <div class="cols">
-      <div class="rv"><h3>The goal</h3><p>Less snoring and less sleep apnoea. For CPAP users: working towards needing less treatment, or none, where that’s possible.</p></div>
-      <div class="rv"><h3>The rule</h3><p>You keep using your CPAP or mouthguard every night, under your doctor’s strict supervision. Nothing changes without them.</p></div>
+    <h2><span class="rv">24 weeks of training.</span><span class="rv">Then a repeat sleep study.</span><span class="rv">Your clinician decides.</span></h2>
+    <div class="grid2">
+      <div class="rv"><h3>The goal</h3><p>Less snoring, better sleep and better sleep apnoea outcomes. If your results justify it, a discussion with your clinician about whether your treatment needs have changed.</p></div>
+      <div class="rv"><h3>The rule</h3><p>Keep using your CPAP or oral appliance exactly as prescribed. Any change follows clinical reassessment and objective testing. Reducing or stopping CPAP is never guaranteed.</p></div>
     </div>
   </div>
 </section>
 
-<section class="caution">
+<!-- G: Science and safety -->
+<section class="band" id="evidence">
   <div class="wrap">
-    <div class="box rv">
-      <p class="eyebrow">Straight talk</p>
-      <p>Training can’t fix everything, and nobody can promise a result up front. If your airway is narrowed by something structural, that’s a job for your doctor. If anyone has seen you stop breathing in your sleep, or you’ve felt drowsy at the wheel, see your GP soon. Breathe Strong doesn’t diagnose sleep apnoea and doesn’t replace your doctor or your CPAP.</p>
+    <div class="sechead" style="max-width:900px">
+      <p class="eyebrow rv">Science and safety</p>
+      <h2 class="rv">Built around evidence. Grounded in realistic expectations.</h2>
+      <p class="rv">Research suggests that targeted tongue and throat exercises can improve snoring and some measures of obstructive sleep apnoea in selected people. Breathe Strong combines these exercises with physical conditioning, breathing practice and progress tracking to support a broader approach to sleep health.</p>
+      <p class="rv">Results vary. Exercise does not replace medical diagnosis or prescribed treatment. Changes to CPAP therapy should only be considered following appropriate clinical reassessment.</p>
+    </div>
+
+    <ul class="refs">
+      <li class="rv"><b>Tongue and throat exercises</b>
+        <p>Small randomised trials have reported less snoring and lower apnoea–hypopnoea index after about three months of daily exercises in adults with snoring or mild to moderate obstructive sleep apnoea. A 2020 Cochrane review concluded these exercises probably reduce daytime sleepiness, rated the certainty of the evidence from moderate to very low, and called for larger and longer trials.</p>
+        <cite>Guimarães KC, et al. Effects of oropharyngeal exercises on patients with moderate obstructive sleep apnea syndrome. Am J Respir Crit Care Med. 2009;179(10):962–966. <a href="https://doi.org/10.1164/rccm.200806-981OC" rel="noopener">doi:10.1164/rccm.200806-981OC</a></cite>
+        <cite>Ieto V, et al. Effects of oropharyngeal exercises on snoring: a randomized trial. Chest. 2015;148(3):683–691. <a href="https://doi.org/10.1378/chest.14-2953" rel="noopener">doi:10.1378/chest.14-2953</a></cite>
+        <cite>Camacho M, et al. Myofunctional therapy to treat obstructive sleep apnea: a systematic review and meta-analysis. Sleep. 2015;38(5):669–675. <a href="https://doi.org/10.5665/sleep.4652" rel="noopener">doi:10.5665/sleep.4652</a></cite>
+        <cite>Rueda JR, et al. Myofunctional therapy (oropharyngeal exercises) for obstructive sleep apnoea. Cochrane Database Syst Rev. 2020;(11):CD013449. <a href="https://doi.org/10.1002/14651858.CD013449.pub2" rel="noopener">doi:10.1002/14651858.CD013449.pub2</a></cite></li>
+      <li class="rv"><b>Exercise training</b>
+        <p>A meta-analysis of five small studies found exercise training was associated with lower sleep apnoea severity and less daytime sleepiness in adults with obstructive sleep apnoea, with little change in body weight.</p>
+        <cite>Iftikhar IH, Kline CE, Youngstedt SD. Effects of exercise training on sleep apnea: a meta-analysis. Lung. 2014;192(1):175–184. <a href="https://doi.org/10.1007/s00408-013-9511-3" rel="noopener">doi:10.1007/s00408-013-9511-3</a></cite></li>
+      <li class="rv"><b>Breathing muscle training</b>
+        <p>A small placebo-controlled trial in adults with obstructive sleep apnoea reported better sleep quality and lower blood pressure after inspiratory muscle training. It did not change the apnoea–hypopnoea index.</p>
+        <cite>Vranish JR, Bailey EF. Inspiratory muscle training improves sleep and mitigates cardiovascular dysfunction in obstructive sleep apnea. Sleep. 2016;39(6):1179–1185. <a href="https://doi.org/10.5665/sleep.5826" rel="noopener">doi:10.5665/sleep.5826</a></cite></li>
+      <li class="rv"><b>Fluid and the evening routine</b>
+        <p>An observational study in non-obese men linked the amount of fluid shifting out of the legs overnight with the severity of obstructive sleep apnoea. That is an association. Whether evening habits aimed at it improve sleep apnoea is less certain.</p>
+        <cite>Redolfi S, et al. Relationship between overnight rostral fluid shift and obstructive sleep apnea in nonobese men. Am J Respir Crit Care Med. 2009;179(3):241–246. <a href="https://doi.org/10.1164/rccm.200807-1076OC" rel="noopener">doi:10.1164/rccm.200807-1076OC</a></cite></li>
+    </ul>
+    <p class="fine rv">These studies tested individual methods, mostly over two to four months and in small groups. The Breathe Strong program as a whole has not been tested in a clinical trial, and it is not a medical device or a medical treatment.</p>
+
+    <div class="caution rv" id="safety">
+      <p class="eyebrow">Safety</p>
+      <div class="grid2">
+        <div>
+          <h3>If you use CPAP or an oral appliance</h3>
+          <ul class="plain">
+            <li>Keep using it every night, exactly as prescribed.</li>
+            <li>Tell your clinician you are starting the program.</li>
+            <li>Lower readings on your machine, quieter recordings or feeling better do not show that sleep apnoea has gone. Only a sleep study can.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>See your GP soon if</h3>
+          <ul class="plain">
+            <li>Anyone has seen you stop breathing, choke or gasp in your sleep.</li>
+            <li>You have felt drowsy while driving. Don’t drive if you feel drowsy.</li>
+            <li>You are often tired in the day, even after a full night.</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin:18px 0 0">Exercise cannot change every cause of snoring or sleep apnoea, including structural ones that need medical or surgical care. Talk to your GP before starting a new exercise program, especially if you have a heart, blood pressure or joint condition.</p>
     </div>
   </div>
 </section>
 
-<section class="final">
-  <div class="wrap">
-    <h2 class="rv">Week one <em>starts tonight.</em></h2>
-    <p class="rv">Five quick choices and you’re in. Open it on your phone.</p>
-    <div class="cta rv">
-      <a class="btn" href="https://swornsealed.github.io/breathe-strong/">Open the tester app</a>
-      <a class="btn2" href="program.html">Read the full program</a>
+<!-- H: FAQ -->
+<section id="faq">
+  <div class="wrap faq">
+    <div class="sechead">
+      <p class="eyebrow">FAQ</p>
+      <h2>Straight answers</h2>
     </div>
-    <p class="soon">Full program on sale soon.</p>
+    <details>
+      <summary>Can Breathe Strong help reduce snoring?</summary>
+      <p>It is designed to. The daily tongue and throat routine is based on exercises that reduced snoring in small clinical trials, and the program adds fitness work and evening habits around it. Results vary from person to person, and Breathe Strong itself has not been tested in a trial. Tracking your snore score shows you what is happening for you.</p>
+    </details>
+    <details>
+      <summary>Can exercise improve obstructive sleep apnoea?</summary>
+      <p>Research suggests it can for some people. Studies of tongue and throat exercises and of general exercise training have reported improvements in some measures of obstructive sleep apnoea. The studies are small, the improvements are partial for most people, and exercise does not replace diagnosis or prescribed treatment. See <a href="#evidence">Evidence and safety</a> for the sources.</p>
+    </details>
+    <details>
+      <summary>Can Breathe Strong help me stop using CPAP?</summary>
+      <p>No one can promise that. If your snoring, symptoms and records improve over the 24 weeks, that gives you a good reason to ask your clinician about reassessment, which normally means a repeat sleep study. Some people may then have their treatment adjusted. Others will need to continue as they are. Stopping CPAP is never guaranteed, and it should only happen under medical supervision with appropriate objective testing. Until your clinician says otherwise, use your CPAP every night.</p>
+    </details>
+    <details>
+      <summary>How long is the program?</summary>
+      <p>24 weeks, in four phases: Foundation (weeks 1–2), Build (weeks 3–5), Strength (weeks 6–8) and Progression (weeks 9–24), with checkpoints at weeks 4 and 8 and a review at the end.</p>
+    </details>
+    <details>
+      <summary>How much time will I need each day?</summary>
+      <p>About 20 minutes of breathing-trainer and airway exercises, and about 15 minutes for the evening wind-down. On top of that there is one main session on six days of the week: around 50 minutes on strength days and 30 to 45 minutes on cardio days.</p>
+    </details>
+    <details>
+      <summary>Do I need gym equipment?</summary>
+      <p>No. You choose one of four set-ups: gym, dumbbells at home, household items such as water jugs and a backpack, or bodyweight only. Every strength exercise has a version for each. You will need a handheld breathing trainer, which is sold separately by other companies.</p>
+    </details>
+    <details>
+      <summary>Is the program suitable for beginners?</summary>
+      <p>Yes. A short starting-fitness check sets your starting level, the first two weeks use lighter loads and higher repetitions while you learn the movements, and there are bodyweight versions of the strength exercises. If you have a health condition or have not exercised for a long time, check with your GP first.</p>
+    </details>
+    <details>
+      <summary>How do I track my progress?</summary>
+      <p>Each morning you log last night in about a minute: your snore score from a snore-recording app, how tired you feel, and optional CPAP and wearable numbers. The app charts these against your starting point. In the tester everything is entered by hand.</p>
+    </details>
+    <details>
+      <summary>Is the tester free?</summary>
+      <p>Yes. The tester is free to use. It runs in your phone’s browser, so there is nothing to install from an app store. Pricing for the full program has not been announced.</p>
+    </details>
+    <details>
+      <summary>Does Breathe Strong replace medical treatment?</summary>
+      <p>No. Breathe Strong is a training and tracking program. It does not diagnose sleep apnoea and it does not replace your clinician, a sleep study, CPAP or any other prescribed treatment.</p>
+    </details>
+  </div>
+</section>
+
+<!-- I: Final CTA -->
+<section class="final band">
+  <div class="wrap">
+    <h2 class="rv">Start working towards quieter nights.</h2>
+    <p class="rv">Build better habits, train consistently and take a structured approach to improving your sleep health.</p>
+    <div class="cta rv"><a class="btn" href="https://swornsealed.github.io/breathe-strong/">Explore Breathe Strong</a></div>
+    <p class="soon">Free tester. Opens in your phone’s browser.</p>
   </div>
 </section>
 
@@ -270,7 +326,14 @@ footer p{max-width:62em}
 
 <footer>
   <div class="wrap">
-    <p>Breathe Strong is a training and tracking program. It doesn’t diagnose sleep apnoea or any other condition, and it doesn’t replace advice or treatment from your doctor. If you use CPAP or an oral appliance, keep using it as prescribed and don’t change your treatment without your doctor. Talk to your GP before starting a new exercise program.</p>
+    <nav aria-label="Information">
+      <a href="about.html#privacy">Privacy and your data</a>
+      <a href="about.html#disclaimer">Medical disclaimer</a>
+      <a href="about.html#tester">Tester limitations</a>
+      <a href="about.html#contact">Contact and support</a>
+      <a href="about.html#about">About Breathe Strong</a>
+    </nav>
+    <p>Breathe Strong is a training and tracking program. It does not diagnose sleep apnoea or any other condition, and it does not replace advice or treatment from your clinician. If you use CPAP or an oral appliance, keep using it as prescribed and do not change your treatment without your clinician. Talk to your GP before starting a new exercise program.</p>
     <p>© 2026 Breathe Strong</p>
   </div>
 </footer>
@@ -283,9 +346,14 @@ d.body.classList.remove('nojs');
 /* reveal on scroll */
 var rv=[].slice.call(d.querySelectorAll('.rv'));
 if('IntersectionObserver' in window&&!still){
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
-  rv.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px'});
+  rv.forEach(function(el){io.observe(el)});
 }else rv.forEach(function(el){el.classList.add('in')});
+
+/* mobile menu: close after choosing a link */
+var menu=d.getElementById('menu');
+menu.addEventListener('click',function(e){if(e.target.tagName==='A')menu.open=false});
+d.addEventListener('keydown',function(e){if(e.key==='Escape')menu.open=false});
 
 /* breathing ring + wave: 4 s in, 6 s out */
 var cv=d.getElementById('wave'),cx=cv.getContext('2d'),bl=d.getElementById('bl'),hero=d.getElementById('hero'),W=0,H=0,vis=true,lastIn=null;
@@ -299,12 +367,10 @@ function draw(t){
   for(var k=0;k<3;k++){
     cx.beginPath();
     for(var x=0;x<=W;x+=6){
-      var u=x/W,rough=Math.pow(1-u,2.2),
-          y=H*(.56+.1*k)+Math.sin(x*.012+t*.0006+k*1.7)*(14+26*b)
-            +rough*(Math.sin(x*.09+t*.004+k)*30+Math.sin(x*.21-t*.006)*16);
+      var y=H*(.6+.1*k)+Math.sin(x*.012+t*.0006+k*1.7)*(12+22*b);
       x?cx.lineTo(x,y):cx.moveTo(x,y);
     }
-    cx.strokeStyle=k===1?'rgba(127,183,164,.55)':'rgba(127,183,164,.2)';cx.lineWidth=k===1?2:1.2;cx.stroke();
+    cx.strokeStyle=k===1?'rgba(127,183,164,.5)':'rgba(127,183,164,.18)';cx.lineWidth=k===1?2:1.2;cx.stroke();
   }
 }
 size();addEventListener('resize',size);
@@ -315,12 +381,12 @@ else{
 }
 
 /* header + week counter */
-var hdr=d.getElementById('hdr'),wk=d.getElementById('weeks'),wn=d.getElementById('wn'),pt=d.getElementById('pt'),pd=d.getElementById('pd'),ph=d.getElementById('ph'),fill=d.getElementById('fill'),cur=-1;
-var P=[[1,'Foundation','Learn the moves and the brace. 3 sets of 10–12. Log your snore score to set a baseline.'],
-[3,'Build','Lifts get heavier: 4 sets of 6–8. First checkpoint at week 4.'],
-[6,'Strength','4–5 sets of 4–6. This is where the bracing work counts most. Second checkpoint at week 8.'],
-[9,'Progression','Small loads added week by week. At 3 months, compare your snore score with your baseline.'],
-[24,'Retest','Compare with where you started. CPAP and mouthguard users book a repeat sleep study. Your doctor decides what happens next.']];
+var hdr=d.getElementById('hdr'),wk=d.getElementById('journey'),wn=d.getElementById('wn'),pt=d.getElementById('pt'),pd=d.getElementById('pd'),ph=d.getElementById('ph'),fill=d.getElementById('fill'),cur=-1;
+var P=[[1,'Foundation','Learn the exercises and settle into the daily routine. Strength work at 3 sets of 10–12, steady cardio for 30 minutes. Log your nights to set a baseline.'],
+[3,'Build','Strength work moves to 4 sets of 6–8 and cardio to 40 minutes. First checkpoint at week 4: repeat your checks and see what has changed.'],
+[6,'Strength','4–5 sets of 4–6 and cardio at 45 minutes. Second checkpoint at week 8.'],
+[9,'Progression','The same sessions, with small loads added over time. At 3 months, compare your logs with your baseline.'],
+[24,'Review','Compare your records with where you started and take your summary to your clinician. If you use CPAP or an oral appliance, ask about a repeat sleep study.']];
 function onScroll(){
   hdr.classList.toggle('solid',scrollY>40);
   var r=wk.getBoundingClientRect(),span=r.height-innerHeight,p=Math.max(0,Math.min(1,-r.top/span));
@@ -331,11 +397,11 @@ function onScroll(){
     if(pt.textContent!==P[i][1]){pt.textContent=P[i][1];pd.textContent=P[i][2];ph.classList.toggle('end',i===4);fill.style.background=i===4?'var(--acc)':'var(--air)'}
   }
 }
-addEventListener('scroll',onScroll,{passive:true});onScroll();
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();
 
 /* rail arrows */
 var rail=d.getElementById('rail');
-function step(n){rail.scrollBy({left:n*356,behavior:still?'auto':'smooth'})}
+function step(n){rail.scrollBy({left:n*290,behavior:still?'auto':'smooth'})}
 d.getElementById('prev').onclick=function(){step(-1)};d.getElementById('next').onclick=function(){step(1)};
 })();
 </script>
