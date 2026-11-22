@@ -131,7 +131,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 @media (max-width:520px){.moves{grid-template-columns:repeat(2,minmax(0,1fr))}.moves figure:nth-child(3){display:none}}
 
 /* 24-week journey */
-.weeks{height:300vh;position:relative;background:var(--deep);padding:0}
+.weeks{height:420vh;position:relative;background:var(--deep);padding:0}
 .weeks .pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;overflow:hidden;padding-top:64px}
 .weeks .wrap{width:100%}
 .weeks h2{font-size:clamp(28px,4vw,44px)}
@@ -146,7 +146,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .phase p{color:var(--mut);margin:0}
 .track{position:relative;height:10px;border-radius:5px;background:var(--line);margin-top:20px;overflow:hidden}
 .track i{position:absolute;inset:0;background:var(--air);transform-origin:left;transform:scaleX(0)}
-.ticks{display:grid;grid-template-columns:2fr 3fr 3fr 16fr;font-size:14px;color:var(--dim);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
+.ticks{display:grid;grid-template-columns:repeat(4,1fr);font-size:14px;color:var(--dim);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
 .ticks span{white-space:nowrap;overflow:hidden}
 @media (max-width:640px){.ticks{display:none}.wk .num{letter-spacing:-2px}}
 @media (max-height:620px){.weeks .intro{display:none}}
@@ -248,7 +248,7 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .facts{list-style:none;padding:0;margin:30px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:760px}
 .facts li{border:1px solid var(--line);border-radius:20px;padding:7px 14px;color:var(--mut);font-size:15px}
 /* phones: tighter rhythm and a shorter pinned timeline */
-@media (max-width:760px){.sechead{margin-bottom:26px}.weeks{height:240vh}.final{padding:72px 0}.card{padding:22px}.deal .grid2{margin-top:28px;gap:24px}}
+@media (max-width:760px){.sechead{margin-bottom:26px}.weeks{height:340vh}.final{padding:72px 0}.card{padding:22px}.deal .grid2{margin-top:28px;gap:24px}}
 
 /* information page structure */
 .doc section{padding:0}

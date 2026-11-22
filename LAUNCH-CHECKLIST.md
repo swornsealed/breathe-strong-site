@@ -49,7 +49,7 @@ See `docs/membership-architecture.md` for the proposed payment set-up.
 - [ ] Confirm final prices and currency (indicative: A$19.95 monthly, A$203.49 for 12 months)
 - [ ] Decide whether the 12-month plan renews automatically, and state it on the annual card
 - [ ] Refund policy and published membership terms (the monthly card refers to "the published terms", which do not exist yet)
-- [ ] Legal review of selling a 12-month plan while only 24 weeks of program are released
+- [x] All 52 weeks are released in the app, so the 12-month plan matches the content available
 - [ ] Add the payment provider to the Privacy Policy (sections 6 and 10) once chosen
 - [ ] Update `about.html` "Tester limitations", which still describes a free tester
 - [ ] Build and test checkout, cancellation, notifications and access control before enabling the buttons

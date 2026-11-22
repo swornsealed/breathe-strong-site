@@ -41,7 +41,6 @@ disabled until every item under "Before switching on" is done.
   so a no-account mode cannot be checked. Options: require sign-in for members, or keep a limited
   free phone-only mode.
 - What existing testers get when the paywall arrives.
-- How a 12-month sale is described while only 24 weeks of program exist.
 - GST and tax handling, and the business details Stripe requires (ties to the privacy checklist).
 
 ## To verify with the payment provider before relying on it
