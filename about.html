@@ -51,75 +51,126 @@
   <div class="wrap">
     <p class="eyebrow">Information</p>
     <h1>Privacy, safety and the tester</h1>
-    <p>This page describes how the current tester actually works. It will be updated as the program develops.</p>
+    <p>A plain-language account of how the current tester works, what Breathe Strong is and is not, and where to get help. It will be updated as the program develops.</p>
     <nav class="toc" aria-label="On this page">
       <a href="#privacy">Privacy and your data</a>
+      <a href="#data">Back up and delete</a>
       <a href="#disclaimer">Medical disclaimer</a>
       <a href="#tester">Tester limitations</a>
       <a href="#contact">Contact and support</a>
       <a href="#about">About Breathe Strong</a>
     </nav>
 
-    <h2 id="privacy">Privacy and your data</h2>
-    <!-- TODO (owner input needed): this section is a factual summary of how the tester stores data.
-         It is not a complete legal privacy policy. A full policy needs the legal name of the person or
-         business responsible, a privacy contact, the country whose privacy law applies, how long cloud
-         data is kept, and who can access the cloud database. Add those before a paid launch. -->
-    <h3>This website</h3>
-    <ul>
-      <li>This website has no sign-up forms, no analytics and no advertising trackers, and it sets no cookies of its own.</li>
-      <li>It loads its fonts from Google Fonts and is hosted on GitHub Pages. Both services receive standard request information, such as your IP address, when a page loads.</li>
-    </ul>
-    <h3>The tester app</h3>
-    <p>When you first open the tester you choose where your logs are kept.</p>
-    <ul>
-      <li><b>On this phone only.</b> No account. Your logs are saved in your browser’s storage on that device and are not sent to Breathe Strong. If you clear your browser data or lose the phone, they are gone unless you have made a backup.</li>
-      <li><b>Google sign-in.</b> Your logs are saved to Breathe Strong’s cloud database, which runs on Google Firebase, linked to your Google account, with a copy on your phone. This lets them sync across your devices. The app asks for your consent before you sign in.</li>
-    </ul>
-    <p>The logs are what you enter: your set-up choices, nightly entries such as snore score, tiredness, CPAP and wearable numbers, completed sessions, check results, body measures, and any sleep study results, appointments and questions you add. This is health information, so choose the storage option you are comfortable with.</p>
-    <p>The app loads its fonts and its sign-in components from Google. Links to shops that sell breathing trainers open those companies’ own websites.</p>
-    <h3 id="data">Backing up and deleting your data</h3>
-    <ul>
-      <li><b>Back up:</b> in the app, open Settings and choose “Back up to a file”. You can save the file to iCloud Drive or Google Drive and restore from it later.</li>
-      <li><b>Delete, phone-only mode:</b> open Settings and choose “Reset all data”.</li>
-      <li><b>Delete, Google sign-in:</b> open Settings and choose “Delete my account data”. This permanently deletes your data from the cloud and from the phone.</li>
-      <li>If you switch from Google sign-in to phone-only, the cloud copy stays until you delete it.</li>
-    </ul>
+    <!-- ============================================================
+         OWNER TODO LIST for this page. Nothing below may be invented.
+         Supply each item, then replace the matching "pending" notice.
+         1. Developer or business name (legal name, and trading name if different).
+         2. Support email address or contact form.
+         3. Privacy contact (who handles data requests) and how to reach them.
+         4. Legal jurisdiction (country or state whose privacy law applies).
+         5. Cloud data retention: how long Firebase data is kept, including after
+            an account goes inactive, and backup retention.
+         6. Firebase data access and deletion: who can access the cloud database,
+            the security rules in force, where data is hosted, and how deletion
+            requests are handled outside the in-app button.
+         7. Any other disclosures the law in that jurisdiction requires
+            (for example health-data handling, age limits, complaint routes).
+         ============================================================ -->
 
-    <h2 id="disclaimer">Medical disclaimer</h2>
-    <ul>
-      <li>Breathe Strong is an exercise, lifestyle and tracking program. It is not a medical device, a diagnosis or a medical treatment, and it does not claim any regulatory approval or clinical endorsement.</li>
-      <li>The program as a whole has not been tested in a clinical trial. The research it draws on is listed under <a href="./#evidence">Evidence and safety</a>. Results vary and no outcome is guaranteed.</li>
-      <li>It does not replace your clinician, a sleep study, CPAP, an oral appliance or any other prescribed treatment. Keep using prescribed treatment exactly as directed.</li>
-      <li>Changes to CPAP or other treatment should only be made by your clinician, following reassessment and appropriate objective testing.</li>
-      <li>Snore scores, CPAP machine readings, wearable data and how you feel are useful for spotting trends. They cannot establish that obstructive sleep apnoea has improved or resolved.</li>
-      <li>The checks in the app are for your own information. They are not validated screening tools and do not give a diagnosis.</li>
-      <li>Talk to your GP before starting a new exercise program, particularly if you have a heart, blood pressure, breathing or joint condition. Stop and seek medical advice if you feel chest pain, faintness or unusual breathlessness during exercise.</li>
-      <li>See your GP soon if anyone has seen you stop breathing, choke or gasp in your sleep, or if you feel drowsy while driving. Do not drive when drowsy.</li>
-    </ul>
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy and your data</h2>
+      <div class="glance">
+        <h3>At a glance</h3>
+        <ul>
+          <li>This website collects nothing from you: no forms, analytics, advertising trackers or cookies of its own.</li>
+          <li>In the tester app, <b>you choose</b> where your logs live: on your phone only, or in the cloud with Google sign-in.</li>
+          <li>You can back up or delete your data yourself at any time from the app’s Settings.</li>
+        </ul>
+      </div>
+      <p class="pending">This is a factual summary of how the tester works today. It is not yet a complete legal privacy policy. The details still to be added are the responsible business, a privacy contact, the governing jurisdiction, and cloud retention and access arrangements.</p>
+      <!-- TODO (owner): items 1, 3, 4, 5, 6 and 7 from the list above are needed to turn this summary into a full privacy policy. -->
 
-    <h2 id="tester">Tester limitations</h2>
-    <ul>
-      <li>The tester is an early version, offered free so that men can try the program and give feedback. It may change, and features may be added or removed.</li>
-      <li>It runs in your phone’s web browser. It is not an app-store app.</li>
-      <li>Every number is entered by hand. The tester does not record snoring itself and does not connect automatically to CPAP machines, watches or health apps. A built-in recorder and automatic sync are planned but are not available.</li>
-      <li>Your snore score comes from a separate snore-recording app made by another company.</li>
-      <li>You need to buy your own handheld breathing trainer. Breathe Strong does not make or sell one.</li>
-      <li>In phone-only mode your logs exist only on that device, so back them up regularly.</li>
-      <li>Pricing and availability of the full program have not been announced.</li>
-    </ul>
+      <h3>This website</h3>
+      <ul>
+        <li>No sign-up forms, no analytics and no advertising trackers, and it sets no cookies of its own.</li>
+        <li>It loads its fonts from Google Fonts and is hosted on GitHub Pages. Both services receive standard request information, such as your IP address, when a page loads.</li>
+      </ul>
 
-    <h2 id="contact">Contact and support</h2>
-    <!-- TODO (owner input needed): add a real support email address or contact form here.
-         Do not publish a placeholder address. -->
-    <p class="pending">A support contact for the tester has not been published yet. It will be listed here.</p>
-    <p style="margin-top:14px">Breathe Strong cannot give medical advice. For anything about your health or your treatment, contact your GP or sleep clinic. In an emergency, call your local emergency number.</p>
+      <h3>The tester app: where your logs are kept</h3>
+      <p>When you first open the tester you choose one of two options.</p>
+      <div class="opts">
+        <div><h4>On this phone only</h4><p>No account. Your logs are saved in your browser’s storage on that device and are not sent to Breathe Strong. If you clear your browser data or lose the phone, they are gone unless you have made a backup.</p></div>
+        <div><h4>Google sign-in</h4><p>Your logs are saved to Breathe Strong’s cloud database, which runs on Google Firebase, linked to your Google account, with a copy on your phone. This lets them sync across your devices. The app asks for your consent before you sign in.</p></div>
+      </div>
+      <!-- TODO (owner): item 5 (cloud data retention) and item 6 (who can access the Firebase database, hosting region, security rules). -->
 
-    <h2 id="about">About Breathe Strong</h2>
-    <!-- TODO (owner input needed): add who owns and develops Breathe Strong (name or business name, location),
-         and any relevant qualifications or clinical advisers, only if they are real and can be verified. -->
-    <p>Breathe Strong is an independently developed 24-week program for men over 40 who snore, live with obstructive sleep apnoea or use CPAP. It is currently in its tester stage.</p>
-    <p class="pending">Details of who owns and develops Breathe Strong will be added here before the full program goes on sale.</p>
+      <h3>What the logs contain</h3>
+      <p>Only what you enter: your set-up choices, nightly entries such as snore score, tiredness, CPAP and wearable numbers, completed sessions, check results, body measures, and any sleep study results, appointments and questions you add. This is health information, so choose the storage option you are comfortable with.</p>
+
+      <h3>Other services the app contacts</h3>
+      <p>The app loads its fonts and its sign-in components from Google. Links to shops that sell breathing trainers open those companies’ own websites, which have their own privacy practices.</p>
+    </section>
+
+    <section aria-labelledby="data">
+      <h2 id="data">Back up and delete your data</h2>
+      <ul>
+        <li><b>Back up:</b> in the app, open Settings and choose “Back up to a file”. You can save the file to iCloud Drive or Google Drive and restore from it later.</li>
+        <li><b>Delete, phone-only mode:</b> open Settings and choose “Reset all data”.</li>
+        <li><b>Delete, Google sign-in:</b> open Settings and choose “Delete my account data”. This permanently deletes your data from the cloud and from the phone.</li>
+        <li><b>Switching modes:</b> if you move from Google sign-in to phone-only, the cloud copy stays until you delete it.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="disclaimer">
+      <h2 id="disclaimer">Medical disclaimer</h2>
+      <h3>What Breathe Strong is</h3>
+      <ul>
+        <li>An exercise, lifestyle and tracking program. It is not a medical device, a diagnosis or a medical treatment, and it does not claim any regulatory approval or clinical endorsement.</li>
+        <li>The program as a whole has not been tested in a clinical trial. The research it draws on is listed under <a href="./#evidence">Evidence and safety</a>. Results vary and no outcome is guaranteed.</li>
+      </ul>
+      <h3>Your treatment</h3>
+      <ul>
+        <li>It does not replace your clinician, a sleep study, CPAP, an oral appliance or any other prescribed treatment. Keep using prescribed treatment exactly as directed.</li>
+        <li>Changes to CPAP or other treatment should only be made by your clinician, following reassessment and appropriate objective testing.</li>
+        <li>Snore scores, CPAP machine readings, wearable data and how you feel are useful for spotting trends. They cannot establish that obstructive sleep apnoea has improved or resolved.</li>
+        <li>The checks in the app are for your own information. They are not validated screening tools and do not give a diagnosis.</li>
+      </ul>
+      <h3>Exercising safely</h3>
+      <ul>
+        <li>Talk to your GP before starting a new exercise program, particularly if you have a heart, blood pressure, breathing or joint condition. If you have a heart, kidney or fluid-balance condition, follow your clinician’s instructions on fluids and exercise.</li>
+        <li>Stop and seek medical advice if you feel chest pain, faintness or unusual breathlessness during exercise.</li>
+        <li>See your GP soon if anyone has seen you stop breathing, choke or gasp in your sleep, or if you feel drowsy while driving. Do not drive when drowsy.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="tester">
+      <h2 id="tester">Tester limitations</h2>
+      <ul>
+        <li><b>Early version.</b> The tester is offered free so that men can try the program and give feedback. It may change, and features may be added or removed.</li>
+        <li><b>Runs in a browser.</b> It opens in your phone’s web browser and is not an app-store app.</li>
+        <li><b>Manual entry.</b> Every number is entered by hand. The tester does not record snoring itself and does not connect automatically to CPAP machines, watches or health apps. A built-in recorder and automatic sync are planned but are not available.</li>
+        <li><b>Separate snore app.</b> Your snore score comes from a snore-recording app made by another company.</li>
+        <li><b>Separate breathing trainer.</b> You need to buy your own handheld breathing trainer. Breathe Strong does not make or sell one.</li>
+        <li><b>Back-ups are up to you.</b> In phone-only mode your logs exist only on that device, so back them up regularly.</li>
+        <li><b>Pricing.</b> Pricing and availability of the full program have not been announced.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact and support</h2>
+      <!-- TODO (owner): item 2, a real support email address or contact form, and item 3, the privacy contact.
+           Do not publish a placeholder address. -->
+      <p class="pending">A support and privacy contact for the tester has not been published yet. It will be listed here.</p>
+      <p style="margin-top:14px">Breathe Strong cannot give medical advice. For anything about your health or your treatment, contact your GP or sleep clinic. In an emergency, call your local emergency number.</p>
+    </section>
+
+    <section aria-labelledby="about">
+      <h2 id="about">About Breathe Strong</h2>
+      <!-- TODO (owner): item 1, who owns and develops Breathe Strong (name or business name, location), item 4, the
+           legal jurisdiction, and any relevant qualifications or clinical advisers, only if real and verifiable. -->
+      <p>Breathe Strong is an independently developed 24-week program for men over 40 who snore, live with obstructive sleep apnoea or use CPAP. It is currently in its tester stage.</p>
+      <p class="pending">Details of who owns and develops Breathe Strong will be added here before the full program goes on sale.</p>
+    </section>
   </div>
 </main>
 
@@ -128,6 +179,7 @@
     <nav aria-label="Information">
       <a href="./">Home</a>
       <a href="#privacy">Privacy and your data</a>
+      <a href="#data">Back up and delete</a>
       <a href="#disclaimer">Medical disclaimer</a>
       <a href="#tester">Tester limitations</a>
       <a href="#contact">Contact and support</a>

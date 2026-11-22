@@ -72,7 +72,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--air);transform:scale(calc(.8 + .2*var(--b)));box-shadow:0 0 calc(30px + 70px*var(--b)) rgba(127,183,164,calc(.12 + .28*var(--b))),inset 0 0 calc(20px + 60px*var(--b)) rgba(127,183,164,calc(.05 + .14*var(--b)))}
 .ring.r2{inset:9%;border-color:rgba(127,183,164,.35);box-shadow:none;transform:scale(calc(.78 + .24*var(--b)))}
 .ring.r3{inset:-9%;border:1px dashed rgba(127,183,164,.25);box-shadow:none;transform:scale(calc(.86 + .14*var(--b)))}
-.ringbox img{position:relative;width:54%}
+.ringbox img{position:relative;width:64%}
 .breath{position:absolute;left:0;right:0;bottom:-46px;text-align:center;font:800 22px 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:3px;color:var(--air)}
 .breath small{display:block;font:500 14px Barlow,sans-serif;letter-spacing:.3px;text-transform:none;color:var(--dim)}
 @media (max-width:860px){.hero{padding:84px 0 56px;min-height:0}.hero .wrap{grid-template-columns:1fr;gap:44px}.hero h1{font-size:clamp(36px,11.2vw,72px)}.ringbox{width:min(270px,66vw);margin-bottom:56px}.hero .cta .btn,.hero .cta .btn2{flex:1 1 100%}}
@@ -104,7 +104,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .feature .pic{background:var(--bg);border-radius:18px;padding:16px;display:grid;place-items:center}
 .feature .pic img{max-height:260px;width:auto}
 .feature h3{font-size:clamp(32px,4.4vw,46px)}
-.feature .tag{display:inline-block;font:600 13px/1 Barlow,sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:#17181B;background:var(--air);border-radius:12px;padding:6px 10px;margin-bottom:14px}
+.feature .tag{display:inline-block;font:600 14px/1 Barlow,sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:#17181B;background:var(--air);border-radius:12px;padding:6px 10px;margin-bottom:14px}
 .wide{grid-column:span 2}
 @media (max-width:900px){.wide{grid-column:auto}}
 @media (max-width:700px){.feature{grid-template-columns:1fr}.feature .pic img{max-height:200px}}
@@ -146,7 +146,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .phase p{color:var(--mut);margin:0}
 .track{position:relative;height:10px;border-radius:5px;background:var(--line);margin-top:20px;overflow:hidden}
 .track i{position:absolute;inset:0;background:var(--air);transform-origin:left;transform:scaleX(0)}
-.ticks{display:grid;grid-template-columns:2fr 3fr 3fr 16fr;font-size:13px;color:var(--dim);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
+.ticks{display:grid;grid-template-columns:2fr 3fr 3fr 16fr;font-size:14px;color:var(--dim);margin-top:8px;text-transform:uppercase;letter-spacing:1px}
 .ticks span{white-space:nowrap;overflow:hidden}
 @media (max-width:640px){.ticks{display:none}.wk .num{letter-spacing:-2px}}
 @media (max-height:620px){.weeks .intro{display:none}}
@@ -170,10 +170,17 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .deal p{font-weight:500;margin:0}
 
 /* evidence and safety */
-.refs{list-style:none;padding:0;margin:0;display:grid;gap:14px}
-.refs li{background:var(--card);border-radius:20px;padding:20px 22px}
-.refs b{display:block;font:800 22px/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase;margin-bottom:6px}
-.refs p{color:var(--mut);margin:0 0 8px;font-size:17px}
+.refs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start}
+@media (max-width:860px){.refs{grid-template-columns:1fr}}
+.refs article{background:var(--card);border-radius:20px;padding:22px}
+.refs h3{font-size:24px;margin-bottom:8px}
+.refs p{color:var(--mut);margin:0 0 10px;font-size:17px}
+.refs strong{color:var(--ink);font-weight:600}
+.refs summary{cursor:pointer;color:var(--acct);font-weight:600;font-size:16px;padding:10px 0;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px}
+.refs summary::-webkit-details-marker{display:none}
+.refs summary::before{content:"+";font:600 24px/1 'Barlow Condensed',sans-serif;width:14px}
+.refs details[open] summary::before{content:"–"}
+.refs details>p:first-of-type{margin-top:4px}
 .refs cite{display:block;font-style:normal;font-size:14.5px;color:var(--dim);line-height:1.45}
 .refs cite+cite{margin-top:6px}
 .caution{border:2px solid var(--amb);border-radius:24px;padding:28px;margin-top:28px}
@@ -218,3 +225,39 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .doc b{color:var(--ink);font-weight:600}
 .doc .toc{display:flex;flex-wrap:wrap;gap:8px 20px;padding:16px 0;border-block:1px solid var(--line);margin:22px 0 0}
 .doc .pending{border:1px solid var(--amb);border-radius:14px;padding:14px 16px;color:var(--ink)}
+
+/* typical week */
+.sub3{font:600 14px/1.3 Barlow,sans-serif;letter-spacing:2px;color:var(--dim);margin:0 0 12px}
+.daily{list-style:none;padding:0;margin:0 0 30px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.daily li{background:var(--card);border-radius:18px;padding:16px 18px;border-top:3px solid var(--air)}
+.daily b{display:block;font:800 30px/1 'Barlow Condensed',sans-serif;text-transform:uppercase}
+.daily span{color:var(--mut);font-size:16px}
+.days{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.days li{background:var(--card);border-radius:16px;padding:14px 12px;display:flex;flex-direction:column;gap:4px}
+.days .d{font:800 20px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:1px;color:var(--acc)}
+.days .ca .d{color:var(--air)}
+.days .re .d{color:var(--dim)}
+.days b{font-weight:600;line-height:1.25}
+.days .t{color:var(--mut);font-size:15px;line-height:1.35}
+@media (max-width:980px){.daily{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .days{grid-template-columns:1fr;gap:6px}
+ .days li{flex-direction:row;align-items:baseline;gap:12px;padding:12px 16px}
+ .days .d{flex:0 0 44px}.days b{flex:0 0 auto}.days .t{margin-left:auto;text-align:right}}
+@media (max-width:480px){.days li{flex-wrap:wrap}.days .t{flex:1 1 100%;margin:0 0 0 56px;text-align:left}}
+/* tester facts */
+.facts{list-style:none;padding:0;margin:30px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:760px}
+.facts li{border:1px solid var(--line);border-radius:20px;padding:7px 14px;color:var(--mut);font-size:15px}
+/* phones: tighter rhythm and a shorter pinned timeline */
+@media (max-width:760px){.sechead{margin-bottom:26px}.weeks{height:240vh}.final{padding:72px 0}.card{padding:22px}.deal .grid2{margin-top:28px;gap:24px}}
+
+/* information page structure */
+.doc section{padding:0}
+.doc h2{border-top:1px solid var(--line);padding-top:36px}
+.doc h4{font:600 18px/1.3 Barlow,sans-serif;margin:0 0 6px;color:var(--ink)}
+.glance{background:var(--card);border-radius:18px;padding:18px 20px;margin:0 0 16px;border-left:3px solid var(--air)}
+.glance h3{margin-top:0}
+.glance ul{margin:0}
+.opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-bottom:14px}
+.opts div{background:var(--card);border-radius:18px;padding:18px 20px}
+.opts p{margin:0}
+@media (max-width:640px){.opts{grid-template-columns:1fr}}
