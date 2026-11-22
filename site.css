@@ -131,7 +131,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 @media (max-width:520px){.moves{grid-template-columns:repeat(2,minmax(0,1fr))}.moves figure:nth-child(3){display:none}}
 
 /* 24-week journey */
-.weeks{height:420vh;position:relative;background:var(--deep);padding:0}
+.weeks{background:var(--deep)}
 .weeks .pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;overflow:hidden;padding-top:64px}
 .weeks .wrap{width:100%}
 .weeks h2{font-size:clamp(28px,4vw,44px)}
@@ -248,7 +248,7 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .facts{list-style:none;padding:0;margin:30px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:760px}
 .facts li{border:1px solid var(--line);border-radius:20px;padding:7px 14px;color:var(--mut);font-size:15px}
 /* phones: tighter rhythm and a shorter pinned timeline */
-@media (max-width:760px){.sechead{margin-bottom:26px}.weeks{height:340vh}.final{padding:72px 0}.card{padding:22px}.deal .grid2{margin-top:28px;gap:24px}}
+@media (max-width:760px){.sechead{margin-bottom:26px}.final{padding:72px 0}.card{padding:22px}.deal .grid2{margin-top:28px;gap:24px}}
 
 /* information page structure */
 .doc section{padding:0}
@@ -350,3 +350,19 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .trial h3{font-size:24px;margin-bottom:10px}
 .steps{margin:0;padding-left:22px;color:var(--mut)}
 .steps li{padding:5px 0}
+
+/* week explorer: a draggable slider, so the page scrolls past normally */
+.weeks .pin{position:static;height:auto;display:block;overflow:visible;padding-top:0}
+.explorer{margin-top:8px}
+.explorer .phase{min-height:7em}
+#wkr{-webkit-appearance:none;appearance:none;width:100%;height:44px;margin:14px 0 0;background:transparent;cursor:pointer;--fill:0%;--c:var(--air)}
+#wkr.end{--c:var(--acc)}
+#wkr::-webkit-slider-runnable-track{height:10px;border-radius:5px;background:linear-gradient(to right,var(--c) var(--fill),var(--line) var(--fill))}
+#wkr::-moz-range-track{height:10px;border-radius:5px;background:var(--line)}
+#wkr::-moz-range-progress{height:10px;border-radius:5px;background:var(--c)}
+#wkr::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:30px;border-radius:50%;background:var(--ink);border:4px solid var(--acc);margin-top:-10px}
+#wkr::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--ink);border:4px solid var(--acc)}
+#wkr:focus-visible{outline:3px solid var(--ink);outline-offset:4px;border-radius:8px}
+.weeks .ticks{margin-top:2px}
+@media (max-width:640px){.weeks .ticks{display:grid;font-size:14px;letter-spacing:.5px}}
+@media (max-height:620px){.weeks .intro{display:block}}
