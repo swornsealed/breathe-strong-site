@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breathe Strong: 6 months of training for men who snore</title>
+<meta name="description" content="Breathe Strong is a 6-month app and training program for men over 40: strength work with bracing, a daily tongue and throat routine, breathing-trainer work, cardio and tracking. CPAP users keep their treatment. After 6 months, a repeat sleep study. Your doctor decides.">
+<meta name="theme-color" content="#17181B">
+<meta property="og:title" content="Breathe Strong">
+<meta property="og:description" content="6 months of training, then a repeat sleep study. Your doctor decides.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:dark;--bg:#17181B;--card:#24272C;--card2:#2B2E33;--deep:#0F1012;--ink:#F2F0EC;--mut:#B9B6B0;--dim:#9A9791;--acc:#FF5A1F;--acct:#FF7A45;--amb:#E8B04B;--air:#7FB7A4;--line:#3A3D43;--edge:#4A4E55}
+*{box-sizing:border-box;min-width:0}
+html{background:var(--bg);scroll-behavior:smooth;scroll-padding-top:76px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 Barlow,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--acct)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;line-height:1;margin:0;text-wrap:balance}
+h1{font-size:clamp(46px,9vw,88px);letter-spacing:-.5px}
+h2{font-size:clamp(34px,5.6vw,54px)}
+h3{font-size:26px;line-height:1.05}
+p{margin:0 0 14px}
+.mut{color:var(--mut)}
+.eyebrow{font:600 14px/1.3 Barlow,sans-serif;letter-spacing:1.4px;text-transform:uppercase;color:var(--air);margin:0 0 12px}
+.lead{font-size:clamp(19px,2.2vw,22px);color:var(--mut);max-width:34em}
+section{padding:72px 0}
+.sechead{max-width:720px;margin-bottom:34px}
+.sechead p{margin-top:14px;color:var(--mut)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 28px;border-radius:28px;background:var(--acc);color:#17181B;font:800 22px 'Barlow Condensed',sans-serif;text-transform:uppercase;text-decoration:none;letter-spacing:.3px}
+.btn:hover{background:var(--acct)}
+.btn2{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:28px;border:1px solid var(--edge);color:var(--ink);font-weight:600;text-decoration:none}
+.btn2:hover{border-color:var(--ink)}
+.btn.sm{min-height:44px;font-size:18px;padding:0 18px;border-radius:22px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:rgba(23,24,27,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.logo{font:800 24px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;color:var(--ink);text-decoration:none;letter-spacing:.5px;white-space:nowrap}
+.logo b{color:var(--acc);font-weight:800}
+nav{display:flex;gap:26px}
+nav a{color:var(--mut);text-decoration:none;font-weight:500;font-size:16px}
+nav a:hover{color:var(--ink)}
+@media (max-width:820px){nav{display:none}}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:center}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero .lead{margin:22px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.promise{margin-top:30px;border-left:3px solid var(--air);padding:4px 0 4px 16px;font-weight:500;max-width:30em}
+.promise span{display:block;color:var(--mut);font-weight:400;font-size:16px;margin-top:4px}
+.phone{justify-self:center;width:min(300px,78vw);border-radius:38px;border:8px solid #2B2E33;background:var(--bg);overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.phone img{width:100%}
+@media (max-width:820px){.hero{padding-top:36px}.hero .wrap{grid-template-columns:1fr;gap:40px}}
+
+/* paths */
+.band{background:var(--deep)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--card);border-radius:22px;padding:24px}
+.card h3{margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+.card .tag{display:inline-block;font:600 13px/1 Barlow,sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--air);margin-bottom:12px}
+.path{border-top:4px solid var(--air)}
+.path.cpap{border-top-color:var(--acc)}
+.path ul,.plain{list-style:none;padding:0;margin:14px 0 0}
+.path li,.plain li{position:relative;padding:7px 0 7px 26px;color:var(--mut)}
+.path li::before,.plain li::before{content:"";position:absolute;left:2px;top:17px;width:12px;height:3px;background:var(--air);border-radius:2px}
+
+/* parts */
+.num{font:800 20px/1 'Barlow Condensed',sans-serif;color:var(--acc);display:block;margin-bottom:12px;letter-spacing:1px}
+.part p{color:var(--mut)}
+.part .when{color:var(--ink);font-weight:500;font-size:16px}
+
+/* moves */
+.moves{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:28px}
+.moves figure{margin:0;border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.moves .pic{aspect-ratio:1;padding:10px;overflow:hidden}
+.moves .pic img{width:100%;height:100%;object-fit:contain}
+.moves figcaption{background:var(--card);padding:10px 12px;font-size:15px;font-weight:500;flex:1}
+@media (max-width:900px){.moves{grid-template-columns:repeat(3,minmax(0,1fr))}.moves figure:nth-child(n+4){display:none}}
+@media (max-width:520px){.moves{grid-template-columns:repeat(2,minmax(0,1fr))}.moves figure:nth-child(3){display:none}}
+
+/* timeline */
+.bar{display:grid;grid-template-columns:2fr 3fr 3fr 16fr;gap:4px;margin:8px 0 6px}
+.bar span{height:14px;border-radius:7px;background:var(--air)}
+.bar span:nth-child(1){opacity:.4}.bar span:nth-child(2){opacity:.6}.bar span:nth-child(3){opacity:.8}
+.barlab{display:flex;justify-content:space-between;font-size:14px;color:var(--dim);margin-bottom:28px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.steps li{background:var(--card);border-radius:20px;padding:20px}
+.steps .wk{font:600 14px/1.2 Barlow,sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--air);display:block;margin-bottom:8px}
+.steps h3{font-size:24px;margin-bottom:8px}
+.steps p{font-size:16px;color:var(--mut);margin:0}
+.steps li.end{background:transparent;border:2px solid var(--acc)}
+.steps li.end .wk{color:var(--acct)}
+@media (max-width:980px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li.end{grid-column:1/-1}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* tracking */
+.track .wrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:center}
+.track .phone{width:min(270px,70vw)}
+@media (max-width:820px){.track .wrap{grid-template-columns:1fr;gap:36px}.track .phone{order:2}}
+.plain b{color:var(--ink);font-weight:600}
+
+/* safety */
+.caution{border:2px solid var(--amb);border-radius:24px;padding:30px}
+.caution .eyebrow{color:var(--amb)}
+.caution h2{margin-bottom:18px}
+.caution .grid2{margin-top:22px;gap:28px}
+.caution h3{font-size:22px;color:var(--amb);margin-bottom:8px}
+.caution .plain li::before{background:var(--amb)}
+.caution .plain li{color:var(--ink)}
+@media (max-width:520px){.caution{padding:22px 18px}}
+
+/* faq */
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:600;font-size:20px;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:6px;top:14px;font:600 30px/1 'Barlow Condensed',sans-serif;color:var(--acc)}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);max-width:44em;padding-bottom:8px}
+.faq{max-width:820px}
+
+/* final */
+.final{text-align:center}
+.final .lead{margin:16px auto 28px}
+.final .cta{justify-content:center}
+.soon{display:inline-block;margin-top:26px;padding:10px 18px;border-radius:14px;background:var(--card);color:var(--mut);font-size:16px}
+footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--dim);font-size:15px}
+footer p{max-width:60em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./">Breathe <b>Strong</b></a>
+    <nav aria-label="Sections">
+      <a href="#program">The program</a>
+      <a href="#timeline">6 months</a>
+      <a href="#tracking">Tracking</a>
+      <a href="#safety">Safety</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="btn sm" href="https://swornsealed.github.io/breathe-strong/">Open the app</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">For men over 40 who snore</p>
+      <h1>Train for <em>quieter</em> nights.</h1>
+      <p class="lead">Breathe Strong is a 6-month app and training program built to help reduce snoring and support your sleep apnoea treatment. Lift, breathe, train your tongue and throat, and track what changes.</p>
+      <div class="cta">
+        <a class="btn" href="https://swornsealed.github.io/breathe-strong/">Open the tester app</a>
+        <a class="btn2" href="#program">See what you do</a>
+      </div>
+      <p class="promise">6 months of training, then a repeat sleep study. Your doctor decides.
+        <span>On CPAP or a mouthguard? You keep using it every night, under your doctor’s supervision.</span></p>
+    </div>
+    <div class="phone"><img src="img/app-health.webp" width="780" height="1560" alt="The Breathe Strong app on its Health screen, titled Train for your retest. An orange notice says to keep using your CPAP or mouthguard every night. Below it, a 6-month road runs from week 0 to a repeat sleep study."></div>
+  </div>
+</section>
+
+<section class="band" id="who">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">Two ways in</p>
+      <h2>Pick your path</h2>
+    </div>
+    <div class="grid2">
+      <div class="card path">
+        <span class="tag">Path 1</span>
+        <h3>I’ve started snoring</h3>
+        <p class="mut">A 6-month program to reduce snoring, plus help getting tested if you need it.</p>
+        <ul>
+          <li>A 1-minute sleep risk check that tells you when to see your GP</li>
+          <li>A GP visit summary you can hand over at the appointment</li>
+          <li>Your plan adjusts when you enter a sleep study result</li>
+        </ul>
+      </div>
+      <div class="card path cpap">
+        <span class="tag" style="color:var(--acct)">Path 2</span>
+        <h3>I already use CPAP or a mouthguard</h3>
+        <p class="mut">The same 6-month program, then a repeat sleep study. Your doctor decides any change to treatment.</p>
+        <ul>
+          <li>Tell your doctor you’re starting, and enter your last sleep study</li>
+          <li>Train for 24 weeks and use your CPAP every night</li>
+          <li>Take a doctor summary to your repeat sleep study</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="program">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">The program</p>
+      <h2>Six jobs. One plan.</h2>
+      <p>The app sets out each day for you: a short airway routine, one main session and an evening wind-down. Three lifting days, three cardio days and a rest day each week.</p>
+    </div>
+    <div class="grid3">
+      <div class="card part">
+        <span class="num">01</span>
+        <h3>Strength with bracing</h3>
+        <p>Deadlifts, presses, rows, squats and carries, each done with a big belly breath and a tucked chin. Loads build from 3 sets of 10–12 to 4–5 sets of 4–6.</p>
+        <p class="when">3 days a week · about 50 min</p>
+      </div>
+      <div class="card part">
+        <span class="num">02</span>
+        <h3>Tongue and throat routine</h3>
+        <p>A guided set of tongue, throat and neck moves, shown step by step with airway drawings and a timer.</p>
+        <p class="when">Every day · about 12 min</p>
+      </div>
+      <div class="card part">
+        <span class="num">03</span>
+        <h3>Breathing trainer, in and out</h3>
+        <p>Resistance work for the muscles that pull air in and push it out, using a handheld trainer. The level goes up as you get stronger.</p>
+        <p class="when">Every day · trainer sold separately</p>
+      </div>
+      <div class="card part">
+        <span class="num">04</span>
+        <h3>Cardio</h3>
+        <p>Zone 2 at talking pace, nose breathing only, building from 30 to 45 minutes. Plus one long walk a week, with a loaded backpack if you like.</p>
+        <p class="when">3 days a week</p>
+      </div>
+      <div class="card part">
+        <span class="num">05</span>
+        <h3>Evening wind-down</h3>
+        <p>A walk after dinner, calf raises and an early last drink, so less fluid moves from your legs to your neck when you lie down.</p>
+        <p class="when">Every evening · about 15 min</p>
+      </div>
+      <div class="card part">
+        <span class="num">06</span>
+        <h3>Tracking</h3>
+        <p>Snore score each morning, CPAP hours and events, and your watch’s overnight numbers. The app charts them against where you started.</p>
+        <p class="when">1 minute each morning</p>
+      </div>
+    </div>
+
+    <div class="moves">
+      <figure><div class="pic" style="background:#101216"><img src="img/hinge.webp" width="411" height="440" loading="lazy" alt="Line drawing of a bearded man in his fifties hinging at the hips with dumbbells, back flat."></div><figcaption>Dumbbell deadlift, braced</figcaption></figure>
+      <figure><div class="pic" style="background:#0C0C0C"><img src="img/tongue.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the mouth and throat with the tongue pressed to the roof of the mouth."></div><figcaption>Tongue press</figcaption></figure>
+      <figure><div class="pic" style="background:#111317"><img src="img/row.webp" width="432" height="440" loading="lazy" alt="Line drawing of the same man doing a one-arm dumbbell row with a hand and knee on a bench."></div><figcaption>One-arm row, chin tucked</figcaption></figure>
+      <figure><div class="pic" style="background:#0A0A0A"><img src="img/breath.webp" width="460" height="463" loading="lazy" alt="Side-view drawing of the airway with a dotted arrow showing air moving through the nose and down the throat."></div><figcaption>Breathing work</figcaption></figure>
+      <figure><div class="pic" style="background:#0E0F15"><img src="img/carry.webp" width="398" height="440" loading="lazy" alt="Line drawing of the same man standing tall holding a dumbbell in each hand."></div><figcaption>Loaded carry</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="timeline">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="eyebrow">24 weeks</p>
+      <h2>Why it takes 6 months</h2>
+      <p>Muscle and fitness changes take months at our age. So the program runs for 24 weeks, with checkpoints along the way, before anything is compared with where you started.</p>
+    </div>
+    <div class="bar" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <div class="barlab" aria-hidden="true"><span>Week 1</span><span>Week 24</span></div>
+    <ol class="steps">
+      <li><span class="wk">Weeks 1–2</span><h3>Foundation</h3><p>Learn the moves and the brace. 3 sets of 10–12. Log your snore score to set a baseline.</p></li>
+      <li><span class="wk">Weeks 3–5</span><h3>Build</h3><p>Lifts get heavier: 4 sets of 6–8. First checkpoint at week 4.</p></li>
+      <li><span class="wk">Weeks 6–8</span><h3>Strength</h3><p>4–5 sets of 4–6. This is where the bracing work counts most. Second checkpoint at week 8.</p></li>
+      <li><span class="wk">Weeks 9–24</span><h3>Progression</h3><p>Small loads added week by week. Compare your snore score with your baseline at 3 months.</p></li>
+      <li class="end"><span class="wk">6 months</span><h3>Retest</h3><p>Compare with where you started. CPAP and mouthguard users book a repeat sleep study. Your doctor decides what happens next.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="track" id="tracking">
+  <div class="wrap">
+    <div class="phone"><img src="img/app-home.webp" width="780" height="1560" loading="lazy" alt="The Breathe Strong home screen showing Week 7 of 24, Strength phase, with a snore score card, nights logged, sessions this week and a day streak."></div>
+    <div>
+      <p class="eyebrow">Tracking</p>
+      <h2>Numbers you can take to your doctor</h2>
+      <ul class="plain">
+        <li><b>Snore score.</b> Logged each morning and charted week by week against your own baseline.</li>
+        <li><b>CPAP.</b> Hours used, events per hour and mask seal, with a nudge to call your sleep clinic if they slip.</li>
+        <li><b>Watch data.</b> Resting heart rate, breathing rate and blood oxygen, with unusual nights flagged.</li>
+        <li><b>Triggers.</b> Tag your nights and see which habits go with louder or quieter ones.</li>
+        <li><b>Doctor summary.</b> One page of your sleep studies, treatment, symptoms and progress to bring to an appointment.</li>
+      </ul>
+      <p class="mut" style="margin-top:18px">No account. Your logs stay on your phone unless you choose to back them up.</p>
+    </div>
+  </div>
+</section>
+
+<section id="safety" style="padding-top:0">
+  <div class="wrap">
+    <div class="caution">
+      <p class="eyebrow">Read this first</p>
+      <h2>The goal, and the rules</h2>
+      <p>The goal is to reduce your snoring and sleep apnoea. For CPAP users, that means working towards needing less treatment, or none, where that’s possible. It only ever happens under your doctor’s strict supervision, on the evidence of a repeat sleep study.</p>
+      <p>Training can’t fix everything. If your airway is narrowed by something structural, such as a growth or anatomy that needs surgery, that’s a job for your doctor. Breathe Strong doesn’t diagnose sleep apnoea and doesn’t replace your doctor or your CPAP.</p>
+      <div class="grid2">
+        <div>
+          <h3>If you use CPAP or a mouthguard</h3>
+          <ul class="plain">
+            <li>Keep using it every night, under your doctor’s supervision.</li>
+            <li>Don’t change your treatment without them.</li>
+            <li>After 6 months, a repeat sleep study. Your doctor decides: keep, adjust, switch or stop.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>See your GP soon if</h3>
+          <ul class="plain">
+            <li>Anyone has seen you stop breathing, choke or gasp in your sleep.</li>
+            <li>You’ve felt drowsy while driving. Don’t drive if you feel drowsy.</li>
+            <li>You’re often tired in the day, even after a full night.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap faq">
+    <div class="sechead">
+      <p class="eyebrow">Questions</p>
+      <h2>Straight answers</h2>
+    </div>
+    <details>
+      <summary>Will this get me off CPAP?</summary>
+      <p>That’s what we’re working towards, where it’s possible. Some men end up needing less treatment, and for some the doctor may stop it. Others won’t get there, especially when the cause is structural, so nobody can promise it up front. The deal is 6 months of training, then a repeat sleep study. Your doctor reads the result and decides whether anything about your treatment changes. Until then you use your CPAP every night.</p>
+    </details>
+    <details>
+      <summary>Do I need a gym?</summary>
+      <p>No. Choose gym, dumbbells at home, household gear such as water jugs and a backpack, or bodyweight only. Every lift has a version for each.</p>
+    </details>
+    <details>
+      <summary>What do I need to buy?</summary>
+      <p>A handheld breathing trainer, sold by other companies. The app lists where to get one in your region. For your snore score you can use a snore recording app on your phone and type the number in each morning.</p>
+    </details>
+    <details>
+      <summary>How much time does it take?</summary>
+      <p>About 12 minutes for the airway routine and 15 for the evening wind-down each day, plus the main session: around 50 minutes on lifting days and 30 to 45 on cardio days. One rest day a week.</p>
+    </details>
+    <details>
+      <summary>Where does my data go?</summary>
+      <p>Nowhere, unless you send it. There’s no account, and your logs stay on your phone. You can back them up to iCloud Drive or Google Drive from Settings.</p>
+    </details>
+    <details>
+      <summary>How do I get the app?</summary>
+      <p>The tester version runs in your phone’s browser, so there’s nothing to install from an app store. On iPhone, add it to your Home Screen first, then open it from there.</p>
+    </details>
+    <details>
+      <summary>What does it cost?</summary>
+      <p>The tester app is open now. The full program goes on sale soon, and the price will be posted here when it does.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Start with week one</h2>
+    <p class="lead">Five quick choices and you’re in. Open it on your phone.</p>
+    <div class="cta"><a class="btn" href="https://swornsealed.github.io/breathe-strong/">Open the tester app</a></div>
+    <p class="soon">Full program on sale soon.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Breathe Strong is a training and tracking program. It doesn’t diagnose sleep apnoea or any other condition, and it doesn’t replace advice or treatment from your doctor. If you use CPAP or an oral appliance, keep using it as prescribed and don’t change your treatment without your doctor. Talk to your GP before starting a new exercise program.</p>
+    <p>© 2026 Breathe Strong</p>
+  </div>
+</footer>
+
+</body>
+</html>
