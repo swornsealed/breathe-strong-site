@@ -365,3 +365,10 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .weeks .ticks{margin-top:2px}
 @media (max-width:640px){.weeks .ticks{display:grid;font-size:14px;letter-spacing:.5px}}
 @media (max-height:620px){.weeks .intro{display:block}}
+
+/* hero hook: the answer to the three questions */
+.hook{font:600 clamp(21px,2.5vw,29px)/1.25 Barlow,sans-serif;color:var(--ink);margin:6px 0 26px;max-width:24em}
+.hook span{display:block;text-wrap:balance}
+.hook span:last-child{font-weight:700}
+.hook em{font-style:normal;color:var(--acc)}
+.hero .sub{font-size:clamp(17px,1.9vw,20px);font-weight:500;color:var(--mut);margin:18px 0 10px}
