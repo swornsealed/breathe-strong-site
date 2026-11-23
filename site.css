@@ -389,3 +389,9 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 /* body copy carries more weight now that it sits close to white; emphasis comes from weight, not colour */
 .story p,.whygrid p,.card p,.sechead p:not(.eyebrow),.plain li,.faq details p,.refs p{font-weight:400}
 @media (max-width:760px){body{font-size:18.5px}}
+
+/* highlighted lines are a step larger than body copy so they stand out now the body text is bright */
+.whygrid .point{font-size:clamp(21px,2.4vw,25px);font-weight:600;line-height:1.4}
+.story .lede{font-size:clamp(22px,2.6vw,27px)}
+.roadcopy .lede{font-size:clamp(21px,2.4vw,25px)}
+.closing .big{font-size:clamp(23px,2.9vw,30px)}
