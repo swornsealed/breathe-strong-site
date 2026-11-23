@@ -372,3 +372,6 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .hook span:last-child{font-weight:700}
 .hook em{font-style:normal;color:var(--acc)}
 .hero .sub{font-size:clamp(17px,1.9vw,20px);font-weight:500;color:var(--mut);margin:18px 0 10px}
+
+/* phones and tablets in one column: no breathing ring, so the page reaches the next section sooner */
+@media (max-width:860px){.ringbox{display:none}.hero{padding-bottom:40px}}
