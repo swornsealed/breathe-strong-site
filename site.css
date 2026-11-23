@@ -1,6 +1,6 @@
 /* Breathe Strong website. Colours: charcoal background, chalk text, orange for actions,
    numbered stages and milestones, sage for progress, amber for cautions. */
-:root{color-scheme:dark;--bg:#17181B;--card:#24272C;--deep:#0F1012;--ink:#F2F0EC;--mut:#B9B6B0;--dim:#9A9791;--acc:#FF5A1F;--acct:#FF7A45;--amb:#E8B04B;--air:#7FB7A4;--line:#3A3D43;--edge:#4A4E55;--b:0}
+:root{color-scheme:dark;--bg:#17181B;--card:#24272C;--deep:#0F1012;--ink:#F2F0EC;--mut:#D3D0CA;--dim:#AAA7A1;--acc:#FF5A1F;--acct:#FF7A45;--amb:#E8B04B;--air:#7FB7A4;--line:#3A3D43;--edge:#4A4E55;--b:0}
 *{box-sizing:border-box;min-width:0}
 html{background:var(--bg);scroll-padding-top:76px}
 body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.55 Barlow,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
