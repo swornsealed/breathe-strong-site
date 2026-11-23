@@ -9,7 +9,8 @@
 - [ ] Privacy contact email (also used on `about.html` under Contact and support)
 - [ ] Support contact for the tester
 - [ ] Effective date and last-updated date
-- [ ] Who owns and develops Breathe Strong (`about.html`, About section)
+- [x] Who develops Breathe Strong: Craig, medical scientist, Australia (first name only, by his choice)
+- [ ] Legal business name, and the Australian state, for `about.html` and the Privacy Policy
 
 ## Facts to verify in the Firebase console (project `breathe-strong-a0c3a`)
 - [ ] Database hosting region
