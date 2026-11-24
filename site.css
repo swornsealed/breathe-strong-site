@@ -432,3 +432,21 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .dealp{font-weight:500;font-size:clamp(18px,2.1vw,22px);max-width:40em;margin:28px 0 0}
 .why .enjoy{margin-top:48px}
 .final h2{font-size:clamp(52px,10vw,120px)}
+
+/* ---- three training levels ---- */
+.lvl{border-top:4px solid var(--edge)}
+.lvl.lf{border-top-color:var(--air)}.lvl.ls{border-top-color:var(--amb)}.lvl.la{border-top-color:var(--acc)}
+.lvn{display:block;font:600 14px/1 Barlow,sans-serif;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:10px;color:var(--mut)}
+.lvl h3{font-size:34px;margin-bottom:6px}
+.lf h3,.lf .lvt{color:var(--air)}.ls h3,.ls .lvt{color:var(--amb)}.la h3,.la .lvt{color:var(--acct)}
+.lvl .lvt{font-weight:600;font-size:19px;margin-bottom:10px}
+.lvclose{color:var(--mut);font-size:clamp(18px,2vw,20px);max-width:44em;margin:28px 0 0}
+.lvpick{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 10px}
+.lvpick button{min-height:46px;padding:0 18px;border-radius:23px;border:1px solid var(--edge);background:transparent;color:var(--mut);font:600 17px Barlow,sans-serif;cursor:pointer}
+.lvpick button[aria-pressed=true]{color:#17181B;font-weight:700}
+.lvpick .lf[aria-pressed=true]{background:var(--air);border-color:var(--air)}
+.lvpick .ls[aria-pressed=true]{background:var(--amb);border-color:var(--amb)}
+.lvpick .la[aria-pressed=true]{background:var(--acc);border-color:var(--acc)}
+.lvpick button[aria-pressed=true]::after{content:" ✓"}
+.lvnow{color:var(--mut);margin:0 0 14px}.lvnow b{color:var(--ink)}
+ol.days[hidden]{display:none}
