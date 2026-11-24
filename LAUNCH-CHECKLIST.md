@@ -54,3 +54,4 @@ See `docs/membership-architecture.md` for the proposed payment set-up.
 - [ ] Add the payment provider to the Privacy Policy (sections 6 and 10) once chosen
 - [ ] Update `about.html` "Tester limitations", which still describes a free tester
 - [ ] Build and test checkout, cancellation, notifications and access control before enabling the buttons
+- [ ] Get the regulatory classification of the app assessed (for example whether it counts as a medical device); the site no longer states one

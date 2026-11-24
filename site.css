@@ -417,3 +417,18 @@ footer nav a{color:var(--mut);padding:10px 0;display:inline-block}
 .enjoyline{color:var(--mut);font-size:clamp(18px,2vw,20px);margin:24px 0 26px;max-width:38em}
 .enjoy+.fine{margin-top:34px}
 @media (max-width:640px){.enjoylist{grid-template-columns:1fr}}
+
+/* ---- streamlining pass ---- */
+.card details,.story details.more{margin:2px 0 12px}
+.card details summary,.story details.more summary{cursor:pointer;color:var(--acct);font-weight:600;font-size:16px;list-style:none;display:flex;align-items:center;gap:8px;min-height:44px}
+.card details summary::-webkit-details-marker,.story details.more summary::-webkit-details-marker{display:none}
+.card details summary::before,.story details.more summary::before{content:"+";font:600 24px/1 'Barlow Condensed',sans-serif;width:14px}
+.card details[open] summary::before,.story details.more[open] summary::before{content:"–"}
+.story details.more summary{font-size:18px}
+.card b{color:var(--ink);font-weight:600}
+.roadlede{font:600 clamp(20px,2.4vw,26px)/1.35 Barlow,sans-serif;color:var(--ink);margin:12px 0 22px}
+.weeks .stages{margin-bottom:22px}
+.weeks .stages li{background:var(--card)}
+.dealp{font-weight:500;font-size:clamp(18px,2.1vw,22px);max-width:40em;margin:28px 0 0}
+.why .enjoy{margin-top:48px}
+.final h2{font-size:clamp(52px,10vw,120px)}
