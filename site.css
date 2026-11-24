@@ -122,13 +122,14 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .shot figcaption b{display:block;font:800 22px/1.1 'Barlow Condensed',sans-serif;text-transform:uppercase}
 .shot figcaption span{color:var(--mut);font-size:16px}
 @media (max-width:560px){.arrows{display:none}}
-.moves{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:40px}
+.moves{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
 .moves figure{margin:0;background:var(--card);border-radius:18px;overflow:hidden}
-.moves .pic{aspect-ratio:1;padding:12px;background:var(--bg)}
-.moves .pic img{width:100%;height:100%;object-fit:contain}
-.moves figcaption{padding:10px 12px;font-size:15px;font-weight:500}
-@media (max-width:900px){.moves{grid-template-columns:repeat(3,minmax(0,1fr))}.moves figure:nth-child(n+4){display:none}}
-@media (max-width:520px){.moves{grid-template-columns:repeat(2,minmax(0,1fr))}.moves figure:nth-child(3){display:none}}
+.moves .pic{padding:10px;background:#101216}
+.moves .pic img{display:block;width:100%;height:auto}
+.moves figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:12px 14px;font-size:16px}
+.moves figcaption b{font-weight:600}
+.moves figcaption span{color:var(--dim);font-size:14px;white-space:nowrap}
+@media (max-width:900px){.moves{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}}
 
 /* 24-week journey */
 .weeks{background:var(--deep)}
